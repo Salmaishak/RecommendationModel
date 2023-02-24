@@ -10,7 +10,7 @@ def initial_files (csvHotelInfo, csvRatingInfo):
     ratingsSpark.select(col("userID").cast('integer').alias("userID"))
     ratingsSpark.show()
     print(ratingsSpark.head())
-    return ratingsSpark
+    return ratingsSpark,hotels
 def calculateSparsity(rating):
     # Count the total number of ratings in the dataset
     numerator = rating.select("rating").count()
@@ -66,3 +66,13 @@ def MF_ALS (train,test):
                   'regularization = {}'.format(best_rank, best_regularization))
             print('RMSE={}'.format(min_error))
         return best_model
+
+
+def recommendations (model,userID,hotels):
+    userRecs = model.recommendForAllUsers(10)
+    nrecommendations = userRecs \
+        .withColumn("rec_exp", explode('recommendations')) \
+        .select('userID', col("rec_exp.ID"), col("rec_exp.rating"))
+
+    nrecommendations.join(hotels, on='ID').select('userID','ID','name','ratings').filter(col('userID') == userID).show()
+

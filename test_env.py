@@ -2,7 +2,8 @@ from Hotels_MF_ALS import *
 
 csvHotelInfo = "Allhotels.csv"
 csvRatingInfo = 'trialdata.csv'
-ratingsSpark = initial_files(csvHotelInfo, csvRatingInfo)
+ratingsSpark,hotels = initial_files(csvHotelInfo, csvRatingInfo)
 calculateSparsity(ratingsSpark)
 train,test= dataSplit(ratingsSpark)
-MF_ALS(train,test)
+best_model =MF_ALS(train,test)
+recommendations(best_model,660,hotels)
