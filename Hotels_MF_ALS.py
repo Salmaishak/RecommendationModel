@@ -70,5 +70,12 @@ def recommendations (model,userID,hotels):
         .withColumn("rec_exp", explode('recommendations')) \
         .select('userID', col("rec_exp.ID"), col("rec_exp.rating"))
 
-    nrecommendations.join(hotels, on='ID').select('userID','ID','name','ratings').filter(col('userID') == userID).show()
+    nrecommendations.join(hotels, on='ID').select('userID','ID','name','ratings','location')\
+        .filter(col('userID') == userID).orderBy(col('ratings').desc()).show()
+    #Ordered by the highest rating
 
+
+################ TO-DO ##########################
+# 2- extract it as an array for the api / or temp csv file
+# 3- recommendations are not the same each time (filter to a specific rating for recommendation)
+############################################################
