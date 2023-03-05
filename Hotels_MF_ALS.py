@@ -1,9 +1,9 @@
+import joblib
 from pyspark.ml.evaluation import RegressionEvaluator
-from pyspark.ml.recommendation import ALS
+from pyspark.ml.recommendation import ALS, ALSModel
 from pyspark.shell import spark
 from pyspark.sql.functions import col, explode
-from bayes_opt import BayesianOptimization
-from sklearn.model_selection import KFold, cross_val_score
+import pickle
 
 
 def initial_files (csvHotelInfo, csvRatingInfo):
@@ -49,15 +49,14 @@ def dataSplit (rating):
 def MF_ALS (train,test):
 
     # initial
-    ranks = [1,2,3,4,5, 6,7,8,9,10]
-    min_error = 0.59
+    ranks = [6,7,8,9,10,1,2,3,4,5]
+    min_error = 0.5
     best_model = None
 
     for rank in ranks:
         als = ALS(maxIter=5, regParam=0.01,rank=rank, userCol="userID", itemCol="hotelID", ratingCol="ratings",
                   coldStartStrategy="drop")
         model = als.fit(train)
-        best_model= model; 
         predictions = model.transform(test)
         evaluator = RegressionEvaluator(metricName="rmse", labelCol="ratings", predictionCol="prediction")
         rmse = evaluator.evaluate(predictions)
@@ -72,7 +71,7 @@ def MF_ALS (train,test):
             return best_model
 
 
-def recommendations (model,userID,city,hotels):
+def recommendations (model,userID,hotels):
     userRecs = model.recommendForAllUsers(100)
     nrecommendations = userRecs \
         .withColumn("rec_exp", explode('recommendations')) \
@@ -80,10 +79,12 @@ def recommendations (model,userID,city,hotels):
 
     nrecommendations.join(hotels, on='hotelID').select('userID','hotelID','name','ratings','longitude','latitude','city')\
         .filter(col('userID') == userID).orderBy(col('ratings').desc()).show()
+
     #Ordered by the highest rating
 
 
 ################ TO-DO ##########################
 # 2- extract it as an array for the api / or temp csv file
 # 3- filter based on city for each user/ or location
+#4- add a csv for user profiling
 ############################################################
