@@ -71,14 +71,14 @@ def MF_ALS (train,test):
             return best_model
 
 
-def recommendations (model,userID,hotels):
-    userRecs = model.recommendForAllUsers(100)
+def recommendations (model,userID,hotels,city):
+    userRecs = model.recommendForAllUsers(500)
     nrecommendations = userRecs \
         .withColumn("rec_exp", explode('recommendations')) \
         .select('userID', col("rec_exp.hotelID"), col("rec_exp.rating"))
 
     nrecommendations.join(hotels, on='hotelID').select('userID','hotelID','name','ratings','longitude','latitude','city')\
-        .filter(col('userID') == userID).orderBy(col('ratings').desc()).show()
+        .filter(col('userID') == userID).filter(col('city')==city).orderBy(col('ratings').desc()).show()
 
     #Ordered by the highest rating
 
@@ -86,5 +86,5 @@ def recommendations (model,userID,hotels):
 ################ TO-DO ##########################
 # 2- extract it as an array for the api / or temp csv file
 # 3- filter based on city for each user/ or location
-#4- add a csv for user profiling
+# 4- add a csv for user profiling
 ############################################################
