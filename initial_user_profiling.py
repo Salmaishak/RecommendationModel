@@ -7,7 +7,7 @@ def intersection(lst1, lst2):
     return len(lst3)
 
 def user_profile():
-    allhotels = pd.read_csv('C:\\Users\\rawan\\Documents\\Hotels Data\\Allhotels.csv')
+    allhotels = pd.read_csv('Allhotels.csv')
 
     amenities = {1: 'Restaurant', 2: 'Air conditioning', 3: 'Laundry service', 4:'Room service', 5:'Airport transportation',6:'Non-smoking rooms',
                  7:'24-hour front desk',8:'Bar / lounge', 9:'Family rooms', 10:'Safe', 11:'Wifi',12:'Pool',13:'Dry cleaning',
