@@ -10,7 +10,7 @@ def intersection(category, lst1):
 
 
 def user_profile(user_id):
-    attractions = pd.read_csv('C:\\Users\\rawan\\Documents\\Hotels Data\\attractions.csv', encoding ='latin1')
+    attractions = pd.read_csv('attractions.csv', encoding ='latin1')
 
     categories = {1: 'Museum', 2: 'Park', 3: 'Historical landmark', 4:'Beach', 5:'Garden',6:'Art Gallery',
                  7:'Palace',8:'Mosque', 9:'Church', 10:'Shopping mall'}
@@ -44,7 +44,7 @@ def user_profile(user_id):
        )
 
     print(pd.DataFrame(user_rating_df))
-    pd.DataFrame(user_rating_df).to_csv('C:\\Users\\rawan\\Documents\\Hotels Data\\user_profiling_attractions.csv', index = False)
+    pd.DataFrame(user_rating_df).to_csv('user_profiling_attractions.csv', index = False)
 
 user_profile(1)
 

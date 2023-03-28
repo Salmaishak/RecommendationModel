@@ -11,7 +11,7 @@ def unique(list1):
 
 
 
-attractions = pd.read_csv("C:\\Users\\rawan\\Documents\\Hotels Data\\attractions.csv", encoding= "latin1")
+attractions = pd.read_csv("attractions.csv", encoding= "latin1")
 
 #getting unique categories
 print("Unique categorues")
