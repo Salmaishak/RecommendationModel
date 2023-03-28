@@ -4,7 +4,12 @@ import pandas as pd
 
 def intersection(lst1, lst2, total_num):
     lst3 = [value for value in lst1 if value in lst2]
-    return ((len(lst3)/ total_num) * 5)
+    if (len(lst3) == 1):
+        return 4
+    elif (len(lst3) > 1):
+        return 5
+    elif (len(lst3) == 0):
+        return 0
 
 def user_profile():
     allRestaurants = pd.read_csv('C:\\Users\\rawan\\Desktop\\RecommendationModel\\Restaurants\\Cairo_Final_Clean_Updated.csv' ,encoding='latin-1')
