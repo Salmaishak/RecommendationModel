@@ -2,9 +2,9 @@ import pandas as pd
 
 
 
-def intersection(lst1, lst2):
+def intersection(lst1, lst2, total_num):
     lst3 = [value for value in lst1 if value in lst2]
-    return len(lst3)
+    return ((len(lst3)/ total_num) * 5)
 
 def user_profile():
     allhotels = pd.read_csv('Allhotels.csv')
@@ -14,11 +14,15 @@ def user_profile():
                  14:'Concierge', 15:'Children Activities (Kid / Family Friendly)'}
 
     preferred_amenities = []
-    for i in range(5):
-        print("choose 5 numbers of your favorite amenities")
-        num = int(input("Enter the number of requested amenity"))
+    user_input = ''
+    total_num = 0
+    while user_input != '0':
+        num = int(input("Please choose numbers of your favorite amenities (type '0' to exit): "))
         print(amenities[num])
         preferred_amenities.append(amenities[num])
+        total_num = total_num + 1
+
+
 
     user_id = 1
     user_rating_df = []
