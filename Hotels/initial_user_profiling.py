@@ -57,6 +57,6 @@ def user_profile():
        )
 
     print(pd.DataFrame(user_rating_df))
-    pd.DataFrame(user_rating_df).to_csv('C:\\Users\\rawan\\Documents\\Hotels Data\\user_profiling.csv', index = False)
+    pd.DataFrame(user_rating_df).to_csv('user_profiling.csv', index = False)
 
 user_profile()
