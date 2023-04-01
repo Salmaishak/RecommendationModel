@@ -20,7 +20,7 @@ print(similarity)
 
 
 
-# create a function that takes in attraction name as input and returns a list of the most similar restaurants
+# create a function that takes in restaurant name as input and returns a list of the most similar restaurants
 def get_recommendations(RestaurantName, n, cosine_sim=similarity):
     # get the index of the restaurants that matches the restaurant name
     restaurant_index = df[df.Name == RestaurantName].index.values[0]
