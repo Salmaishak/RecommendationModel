@@ -37,7 +37,7 @@ def get_recommendations(attractionName, n, cosine_sim=similarity):
     attraction_indices = [i[0] for i in sim_scores_all]
     scores = [i[1] for i in sim_scores_all]
 
-    # return the top n most similar movies from the movies df
+    # return the top n most similar attractions from the attractions df
     top_attractions_df = pd.DataFrame(df.iloc[attraction_indices]['attraction_name'])
     top_attractions_df['sim_scores'] = scores
     top_attractions_df['ranking'] = range(1, len(top_attractions_df) + 1)
