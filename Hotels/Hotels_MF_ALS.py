@@ -46,6 +46,7 @@ def dataSplit (rating):
     (train, test) = rat.randomSplit([0.8, 0.2])
     return train,test
 
+# we should save here
 def MF_ALS (train,test):
 
     # initial
@@ -68,6 +69,7 @@ def MF_ALS (train,test):
             best_model = model
             print('RMSE IN= {}'.format(min_error))
             print('\nThe best model has {} latent factors'.format(best_rank))
+            best_model.save("als_model")
             return best_model
 
 
