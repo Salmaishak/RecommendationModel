@@ -4,19 +4,19 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from sklearn.metrics.pairwise import cosine_similarity
-df = pd.read_csv("attractions.csv", encoding='latin1')
+df = pd.read_csv("attractions_with_images.csv", encoding='latin1')
 
-print(df.head())
+#print(df.head())
 
 
 cv = CountVectorizer(stop_words='english')
 count_matrix = cv.fit_transform(df["keywords"])
-print("Count Matrix:", count_matrix.toarray())
+#print("Count Matrix:", count_matrix.toarray())
 #print(cv.get_stop_words(count_matrix))
-print(cv.get_feature_names_out(count_matrix))
+#print(cv.get_feature_names_out(count_matrix))
 # compute the cosine similarity matrix
 similarity = cosine_similarity(count_matrix)
-print(similarity)
+#print(similarity)
 
 
 
@@ -35,6 +35,8 @@ def get_recommendations(attractionName, n, cosine_sim=similarity):
 
     # get the attraction indices of the top similar attractions
     attraction_indices = [i[0] for i in sim_scores_all]
+    for i in attraction_indices:
+        print(i)
     scores = [i[1] for i in sim_scores_all]
 
     # return the top n most similar attractions from the attractions df
@@ -47,29 +49,28 @@ def get_recommendations(attractionName, n, cosine_sim=similarity):
 
 # generate a list of recommendations for a specific attraction name
 attraction_name = 'The Hanging Church'
-number_of_recommendations = 15
-top_attractions_df, _ = get_recommendations(attraction_name, number_of_recommendations)
+top_attractions_df, _ = get_recommendations(attraction_name, 20)
 
-print(top_attractions_df)
+#print(top_attractions_df)
 
 
 
 # list of attractions a user has liked
-attractions_list = ['Abdeen Palace Museum', 'Al-Azhar Park', 'Mosque of Muhammad Ali']
+#attractions_list = ['Abdeen Palace Museum', 'Al-Azhar Park', 'Mosque of Muhammad Ali']
 
 # create a copy of the attractions dataframe and add a column in which we aggregated the scores
-user_scores = pd.DataFrame(df['attraction_name'])
-user_scores['sim_scores'] = 0.0
+#user_scores = pd.DataFrame(df['attraction_name'])
+#user_scores['sim_scores'] = 0.0
 
 # top number of scores to be considered for each attractions
-number_of_recommendations = 20
-for attraction_name in attractions_list:
-    top_attractions_df, _ = get_recommendations(attraction_name, number_of_recommendations)
+#number_of_recommendations = 20
+#for attraction_name in attractions_list:
+ #   top_attractions_df, _ = get_recommendations(attraction_name, number_of_recommendations)
     # aggregate the scores
-    user_scores = pd.concat([user_scores, top_attractions_df[['attraction_name', 'sim_scores']]]).groupby(['attraction_name'], as_index=False).sum({'sim_scores'})
+  #  user_scores = pd.concat([user_scores, top_attractions_df[['attraction_name', 'sim_scores']]]).groupby(['attraction_name'], as_index=False).sum({'sim_scores'})
 
 # sort and print the aggregated scores
-top_attractions_per_user_df = user_scores.sort_values(by='sim_scores', ascending=False)[1:20]
-df = top_attractions_per_user_df[top_attractions_per_user_df.attraction_name.isin(attractions_list) == False]
-print(top_attractions_per_user_df)
-print(df)
+#top_attractions_per_user_df = user_scores.sort_values(by='sim_scores', ascending=False)[1:20]
+#df = top_attractions_per_user_df[top_attractions_per_user_df.attraction_name.isin(attractions_list) == False]
+#print(top_attractions_per_user_df)
+#print(df)
