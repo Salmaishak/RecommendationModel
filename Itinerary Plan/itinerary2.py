@@ -32,7 +32,84 @@ def is_open(open_time, close_time, check_time):
         # Open time is after close time, so open spans midnight
         return check_time >= open_time or check_time <= close_time
 
+def compare_times(time1, time2):
+    """
+    Compares two times in the format of "HH:MM AM/PM" and returns a string indicating which one is greater.
 
+    Args:
+        time1 (str): The first time to compare.
+        time2 (str): The second time to compare.
+
+    Returns:
+        str: A string indicating which time is greater.
+    """
+    # Convert the times to 24-hour format for comparison
+    time1_24h = datetime.strptime(time1, "%I%p").strftime("%H")
+    time2_24h = datetime.strptime(time2, "%I%p").strftime("%H")
+    print(time1_24h)
+    print(time2_24h)
+    # Compare the times and return the result as a string
+    if time1_24h > time2_24h or time1_24h == time2_24h:
+        return True
+    elif time1_24h < time2_24h :
+        return False
+
+def convert_to_24hr(time_str,hr=0):
+    # Parse the time string into a datetime object
+    time_obj = datetime.strptime(time_str, '%I%p')
+
+    # Add 2 hours to the time
+    new_time_obj = time_obj + timedelta(hours=hr)
+
+    # Convert the datetime object back to a string
+    new_time_str = new_time_obj.strftime('%#I%p')
+
+    return new_time_str
+
+from datetime import datetime
+
+from datetime import datetime
+
+from datetime import datetime, timedelta
+
+
+from datetime import datetime, timedelta
+
+def is_time_after(time1, time2):
+    # Convert the time strings to datetime objects
+    dt_format = '%I%p'
+    dt1 = datetime.strptime(time1, dt_format)
+    dt2 = datetime.strptime(time2, dt_format)
+
+    # If the second time is before the first time, and it's not midnight,
+    # add 12 hours to the second time to handle cases like 11PM and 1AM
+    if dt2 < dt1 and dt2.time() != datetime.strptime('12AM', '%I%p').time():
+        dt2 += timedelta(hours=12)
+
+    # If the first time is midnight and the second time is before or equal to midnight,
+    # add 24 hours to the first time to handle cases like 12AM and 1AM
+    if dt1.time() == datetime.strptime('12AM', '%I%p').time() and dt2.time() <= datetime.strptime('12AM', '%I%p').time():
+        dt1 += timedelta(hours=24)
+
+    # If the second time is midnight and the first time is before or equal to midnight,
+    # subtract 24 hours from the second time to handle cases like 11PM and 12AM
+    if dt2.time() == datetime.strptime('12AM', '%I%p').time() and dt1.time() <= datetime.strptime('12AM', '%I%p').time():
+        dt2 -= timedelta(hours=24)
+
+    # Check if the second time is after the first time
+    print(dt2>dt1)
+    return dt2 > dt1
+
+is_time_after('9PM', '1AM')
+
+is_time_after('8PM', '9PM')
+is_time_after('11PM', '1AM')
+is_time_after('1AM', '11PM')
+is_time_after('11PM', '12AM')
+is_time_after('12AM', '1AM')
+is_time_after('12AM', '11PM')
+
+# False
 data = {
     "restaurants": [
         {"name": "Koshary Abou Tarek", "location": (30.0444, 31.2357), "opening_time": "10AM", "closing_time": "12AM",
@@ -154,46 +231,48 @@ def plan(city, starting_point, days, start_time, end_time):
         return distance
 
     for day in range(days):
-
+        print(breakfast_flag)
         while not compare_times(current_time, end_time):
-            print(compare_times(current_time, breakfast_end))
-            if not breakfast_flag and compare_times(current_time, breakfast_end) and compare_times(current_time, breakfast_start)==True:
+            print("jnfjnfjjjjjjjjjjjjjjjjvf")
+            if (breakfast_flag == False and compare_times(current_time, breakfast_end) and compare_times(current_time, breakfast_start)):
                 closest_places = get_closest_place(restaurants, starting_point, current_time, visited)
                 print("------------------------")
                 for place in closest_places:
-                    print("fdjvjvbj")
-                    print(compare_times(place["opening_time"], current_time))
-                    if (compare_times(place["opening_time"]), current_time)==False and compare_times(place["closing_time"], current_time)==True:
-                        print("*******************")
+                    if (is_open(place["opening_time"],place["closing_time"],current_time)):
                         itinerary.append(place)
                         visited.append(place)
-                        current_time += 1
+                        starting_point = place["location"]
+                        current_time = convert_to_24hr(current_time,1)
+                        print(current_time)
+
                         breakfast_flag = True
-                        print("enterdd")
-                        print(place)
-                        print(itinerary)
-            # elif (not lunch_flag and current_time < lunch_end and current_time >= lunch_start):
-            #     closest_places = get_closest_place(restaurants, starting_point, current_time, visited)
-            #     for place in closest_places:
-            #         if (convert_to_24h(place["opening_time"]) <= current_time and convert_to_24h(
-            #                 place["closing_time"]) > current_time):
-            #             print("fjfnfnjd")
-            #             itinerary.append(place)
-            #             visited.append(place)
-            #             current_time += 1
-            #             lunch_flag = True
-            # elif (not dinner_flag and current_time < dinner_end and current_time >= dinner_start):
-            #     closest_places = get_closest_place(restaurants, starting_point, current_time, visited)
-            #     for place in closest_places:
-            #         if (convert_to_24h(place["opening_time"]) <= current_time and convert_to_24h(
-            #                 place["closing_time"]) > current_time):
-            #             itinerary.append(place)
-            #             visited.append(place)
-            #             current_time += 1
-            #             dinner_flag = True
+            elif ( lunch_flag == False and compare_times(current_time, lunch_end) and compare_times(current_time, lunch_start)):
+
+                print("lunchhhhhh")
+                closest_places = get_closest_place(restaurants, starting_point, current_time, visited)
+                for place in closest_places:
+                    if (is_open(place["opening_time"],place["closing_time"],current_time)):
+                        itinerary.append(place)
+                        visited.append(place)
+                        starting_point = place["location"]
+                        current_time = convert_to_24hr(current_time, 1)
+                        lunch_flag = True
+            elif ( dinner_flag == False and compare_times(current_time, dinner_end) and compare_times(current_time, dinner_start)):
+                print("dinnerrrr")
+                closest_places = get_closest_place(restaurants, starting_point, current_time, visited)
+                for place in closest_places:
+                    if (is_open(place["opening_time"],place["closing_time"],current_time)):
+                        itinerary.append(place)
+                        visited.append(place)
+                        starting_point = place["location"]
+                        current_time = convert_to_24hr(current_time, 1)
+                        dinner_flag = True
 
             print(itinerary)
-            break
+            print(breakfast_flag)
+            print(lunch_flag)
+            print(starting_point)
 
 
-plan("cairo", (30.0444, 31.2357), 1, "9AM", "11PM")
+
+plan("cairo", (30.0444, 31.2357), 1, "10AM", "11AM")
