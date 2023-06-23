@@ -1,7 +1,8 @@
 import math
 import datetime
 import re
-
+import geopy
+import geopandas
 
 def convert_to_24h(time_str):
     # Convert the time string to a datetime object with the strptime() method
@@ -108,11 +109,17 @@ def recommendation(city, starting_point, days, start_time, end_time):
             print(distance)
             if distance < min_distance and place not in visited:
                 closest_place = place
-                print("------------------------------")
+                print("-----------------------------")
                 print(closest_place["name"])
                 print(closest_place)
                 min_distance = distance
         return closest_place
+
+    print("locationnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")
+    locator = geopy.Nominatim(user_agent="myGeocoder")
+    location = locator.geocode("Cairo Festival City,Cairo 11835 Egypt")
+
+    print("Latitude = {}, Longitude = {}".format(location.latitude, location.longitude))
 
     # reccommend restaurant for breakfast
     if breakfast_start <= current_time < breakfast_end and not breakfast_flag:

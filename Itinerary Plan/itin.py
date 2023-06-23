@@ -1,6 +1,7 @@
 import math
 import datetime
 
+
 # def convert_to_24h(time_str):
 #     # Convert the time string to a datetime object with the strptime() method
 #     time_obj = datetime.datetime.strptime(time_str, "%I%p")
@@ -20,8 +21,8 @@ def compare_times(time1, time2):
         str: A string indicating which time is greater.
     """
     # Convert the times to 24-hour format for comparison
-    time1_24h = datetime.datetime.strptime(time1, "%I:%M %p").strftime("%H:%M")
-    time2_24h = datetime.datetime.strptime(time2, "%I:%M %p").strftime("%H:%M")
+    time1_24h = datetime.datetime.strptime(time1, "%I%p").strftime("%H:%M")
+    time2_24h = datetime.datetime.strptime(time2, "%I%p").strftime("%H:%M")
 
     # Compare the times and return the result as a string
     if time1_24h > time2_24h or time1_24h == time2_24h:
@@ -29,48 +30,68 @@ def compare_times(time1, time2):
     elif time1_24h < time2_24h:
         return False
 
+
 data = {
     "restaurants": [
-        {"name": "Koshary Abou Tarek", "location": (30.0444, 31.2357), "opening_time": "10AM", "closing_time": "12AM", "city": "cairo"},
-        {"name": "Felfela", "location": (30.0479, 31.2336), "opening_time": "8AM", "closing_time": "12AM", "city": "cairo"},
-        {"name": "Abou El Sid", "location": (30.0521, 31.3415), "opening_time": "12PM", "closing_time": "12AM", "city": "cairo"},
-        {"name": "Taboula", "location": (30.0580, 31.3417), "opening_time": "12PM", "closing_time": "1AM", "city": "cairo"},
-        {"name": "Osmanly", "location": (30.0500, 31.3473), "opening_time": "12PM", "closing_time": "12AM", "city": "cairo"},
-        {"name": "Nile Pharaohs Cruising Restaurant", "location": (30.0745, 31.2408), "opening_time": "12PM", "closing_time": "11PM", "city": "cairo"},
-        {"name": "Kadoura", "location": (30.0505, 31.2390), "opening_time": "1PM", "closing_time": "12AM", "city": "cairo"},
-        {"name": "La Palmeraie", "location": (30.0128, 31.2062), "opening_time": "12PM", "closing_time": "12AM", "city": "cairo"},
-        {"name": "Le Pacha 1901", "location": (30.0442, 31.2334), "opening_time": "12PM", "closing_time": "2AM", "city": "cairo"},
-        {"name": "Andrea El Mariouteya", "location": (29.9782, 31.1685), "opening_time": "12PM", "closing_time": "1AM", "city": "cairo"}
+        {"name": "Koshary Abou Tarek", "location": (30.0444, 31.2357), "opening_time": "10AM", "closing_time": "12AM",
+         "city": "cairo"},
+        {"name": "Felfela", "location": (30.0479, 31.2336), "opening_time": "8AM", "closing_time": "12AM",
+         "city": "cairo"},
+        {"name": "Abou El Sid", "location": (30.0521, 31.3415), "opening_time": "12PM", "closing_time": "12AM",
+         "city": "cairo"},
+        {"name": "Taboula", "location": (30.0580, 31.3417), "opening_time": "12PM", "closing_time": "1AM",
+         "city": "cairo"},
+        {"name": "Osmanly", "location": (30.0500, 31.3473), "opening_time": "12PM", "closing_time": "12AM",
+         "city": "cairo"},
+        {"name": "Nile Pharaohs Cruising Restaurant", "location": (30.0745, 31.2408), "opening_time": "12PM",
+         "closing_time": "11PM", "city": "cairo"},
+        {"name": "Kadoura", "location": (30.0505, 31.2390), "opening_time": "1PM", "closing_time": "12AM",
+         "city": "cairo"},
+        {"name": "La Palmeraie", "location": (30.0128, 31.2062), "opening_time": "12PM", "closing_time": "12AM",
+         "city": "cairo"},
+        {"name": "Le Pacha 1901", "location": (30.0442, 31.2334), "opening_time": "12PM", "closing_time": "2AM",
+         "city": "cairo"},
+        {"name": "Andrea El Mariouteya", "location": (29.9782, 31.1685), "opening_time": "12PM", "closing_time": "1AM",
+         "city": "cairo"}
     ],
     "attractions": [
-        {"name": "Pyramids of Giza", "location": (29.9792, 31.1342), "opening_time": "8AM", "closing_time": "5PM", "city": "cairo"},
-        {"name": "Egyptian Museum", "location": (30.0478, 31.2336), "opening_time": "9AM", "closing_time": "5PM", "city": "cairo"},
-        {"name": "Khan el-Khalili", "location": (30.0450, 31.2625), "opening_time": "9AM", "closing_time": "11PM", "city": "cairo"},
-        {"name": "Cairo Tower", "location": (30.0458, 31.2245), "opening_time": "9AM", "closing_time": "12AM", "city": "cairo"},
-        {"name": "Al-Azhar Park", "location": (30.0463, 31.2599), "opening_time": "8AM", "closing_time": "11PM", "city": "cairo"},
-        {"name": "Salah El-Din Citadel", "location": (30.0293, 31.2612), "opening_time": "9AM", "closing_time": "5PM", "city": "cairo"},
-        {"name": "The Hanging Church", "location": (30.0100, 31.2300), "opening_time": "9AM", "closing_time": "4PM", "city": "cairo"},
-        {"name": "Coptic Museum", "location": (30.0086, 31.2256), "opening_time": "9AM", "closing_time": "4PM", "city": "cairo"},
-        {"name": "Sultan Hassan Mosque", "location": (30.0322, 31.2459), "opening_time": "9AM", "closing_time": "5PM", "city": "cairo"},
-        {"name": "Muizz Street", "location": (30.0057, 31.2454), "opening_time": "24/7", "closing_time": "24/7", "city": "cairo"}
+        {"name": "Pyramids of Giza", "location": (29.9792, 31.1342), "opening_time": "8AM", "closing_time": "5PM",
+         "city": "cairo"},
+        {"name": "Egyptian Museum", "location": (30.0478, 31.2336), "opening_time": "9AM", "closing_time": "5PM",
+         "city": "cairo"},
+        {"name": "Khan el-Khalili", "location": (30.0450, 31.2625), "opening_time": "9AM", "closing_time": "11PM",
+         "city": "cairo"},
+        {"name": "Cairo Tower", "location": (30.0458, 31.2245), "opening_time": "9AM", "closing_time": "12AM",
+         "city": "cairo"},
+        {"name": "Al-Azhar Park", "location": (30.0463, 31.2599), "opening_time": "8AM", "closing_time": "11PM",
+         "city": "cairo"},
+        {"name": "Salah El-Din Citadel", "location": (30.0293, 31.2612), "opening_time": "9AM", "closing_time": "5PM",
+         "city": "cairo"},
+        {"name": "The Hanging Church", "location": (30.0100, 31.2300), "opening_time": "9AM", "closing_time": "4PM",
+         "city": "cairo"},
+        {"name": "Coptic Museum", "location": (30.0086, 31.2256), "opening_time": "9AM", "closing_time": "4PM",
+         "city": "cairo"},
+        {"name": "Sultan Hassan Mosque", "location": (30.0322, 31.2459), "opening_time": "9AM", "closing_time": "5PM",
+         "city": "cairo"},
+        {"name": "Muizz Street", "location": (30.0057, 31.2454), "opening_time": "24/7", "closing_time": "24/7",
+         "city": "cairo"}
     ]
 }
 
-breakfast_start = 8
-breakfast_end = 12
+breakfast_start = "8AM"
+breakfast_end = "12AM"
 
-lunch_start = 12
-lunch_end = 18
+lunch_start = "12AM"
+lunch_end = "6PM"
 
-dinner_start = 18
-dinner_end = 24
+dinner_start = "6PM"
+dinner_end = "11PM"
 
 # Radius of earth in km
 R = 6373.0
 
 
 def plan(city, starting_point, days, start_time, end_time):
-
     itinerary = []
     visited = []
     breakfast_flag = False
@@ -132,13 +153,15 @@ def plan(city, starting_point, days, start_time, end_time):
 
     for day in range(days):
 
-        while current_time < end_time:
-            if (not breakfast_flag and compare_times(current_time,breakfast_end) == False and compare_times(current_time,breakfast_start) == True):
-                closest_places = get_closest_place(restaurants,starting_point,current_time,visited)
-                print ("------------------------")
+        while not compare_times(current_time, end_time):
+            print(compare_times(current_time, breakfast_end))
+            if not breakfast_flag and compare_times(current_time, breakfast_end) and compare_times(current_time, breakfast_start)==True:
+                closest_places = get_closest_place(restaurants, starting_point, current_time, visited)
+                print("------------------------")
                 for place in closest_places:
                     print("fdjvjvbj")
-                    if((place["opening_time"]) <= current_time and convert_to_24h(place["closing_time"]) > current_time ):
+                    print(compare_times(place["opening_time"], current_time))
+                    if (compare_times(place["opening_time"]), current_time)==False and compare_times(place["closing_time"], current_time)==True:
                         print("*******************")
                         itinerary.append(place)
                         visited.append(place)
@@ -147,28 +170,28 @@ def plan(city, starting_point, days, start_time, end_time):
                         print("enterdd")
                         print(place)
                         print(itinerary)
-            elif (not lunch_flag and current_time < lunch_end and current_time >= lunch_start):
-                closest_places = get_closest_place(restaurants,starting_point,current_time,visited)
-                for place in closest_places:
-                    if(convert_to_24h(place["opening_time"]) <= current_time and convert_to_24h(place["closing_time"]) > current_time ):
-                        print("fjfnfnjd")
-                        itinerary.append(place)
-                        visited.append(place)
-                        current_time += 1
-                        lunch_flag = True
-            elif (not dinner_flag and current_time < dinner_end and current_time >= dinner_start):
-                closest_places = get_closest_place(restaurants, starting_point, current_time, visited)
-                for place in closest_places:
-                    if (convert_to_24h(place["opening_time"]) <= current_time and convert_to_24h( place["closing_time"]) > current_time):
-                        itinerary.append(place)
-                        visited.append(place)
-                        current_time += 1
-                        dinner_flag = True
-
-
+            # elif (not lunch_flag and current_time < lunch_end and current_time >= lunch_start):
+            #     closest_places = get_closest_place(restaurants, starting_point, current_time, visited)
+            #     for place in closest_places:
+            #         if (convert_to_24h(place["opening_time"]) <= current_time and convert_to_24h(
+            #                 place["closing_time"]) > current_time):
+            #             print("fjfnfnjd")
+            #             itinerary.append(place)
+            #             visited.append(place)
+            #             current_time += 1
+            #             lunch_flag = True
+            # elif (not dinner_flag and current_time < dinner_end and current_time >= dinner_start):
+            #     closest_places = get_closest_place(restaurants, starting_point, current_time, visited)
+            #     for place in closest_places:
+            #         if (convert_to_24h(place["opening_time"]) <= current_time and convert_to_24h(
+            #                 place["closing_time"]) > current_time):
+            #             itinerary.append(place)
+            #             visited.append(place)
+            #             current_time += 1
+            #             dinner_flag = True
 
             print(itinerary)
             break
 
 
-plan("cairo", (30.0444, 31.2357), 1,"9AM","11PM")
+plan("cairo", (30.0444, 31.2357), 1, "9AM", "11PM")
