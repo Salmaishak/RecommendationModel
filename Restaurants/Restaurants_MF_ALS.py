@@ -4,6 +4,8 @@ from pyspark.ml.recommendation import ALS, ALSModel
 from pyspark.shell import spark
 from pyspark.sql.functions import col, explode
 import pickle
+import matplotlib.pyplot as plt
+
 
 
 def initial_files_Rest (csvRestaurantsInfo, csvRatingInfo):
@@ -49,10 +51,11 @@ def dataSplit_Rest(rating):
 def MF_ALS_Rest (train,test):
 
     # initial
-    ranks = [6,7,8,9,10,1,2,3,4,5]
-    min_error = 0.5
+    ranks = [1,2,3,4,5,6,7,8,9,10]
+    min_error = 10
     best_model = None
-
+    ranksUsed = []
+    errors = []
     for rank in ranks:
         als = ALS(maxIter=5, regParam=0.01,rank=rank, userCol="userID", itemCol="restID", ratingCol="ratings",
                   coldStartStrategy="drop")
@@ -61,14 +64,20 @@ def MF_ALS_Rest (train,test):
         evaluator = RegressionEvaluator(metricName="rmse", labelCol="ratings", predictionCol="prediction")
         rmse = evaluator.evaluate(predictions)
         print('RMSE OUT={}'.format(rmse))
-
+        errors.append(rmse)
+        ranksUsed.append(rank)
         if rmse < min_error:
             min_error = rmse
             best_rank = rank
             best_model = model
             print('RMSE IN= {}'.format(min_error))
             print('\nThe best model has {} latent factors'.format(best_rank))
-            return best_model
+    # plt.plot(ranksUsed, errors)
+    # plt.xlabel("Rank in Model MF ALS")
+    # plt.ylabel("RMSE Error")
+    # plt.title("Relationship Between Rank and RMSE Error")
+    # plt.show()
+    return best_model
 
 
 def recommendationsRest (model,userID,rest,city):
@@ -80,8 +89,22 @@ def recommendationsRest (model,userID,rest,city):
     nrecommendations.join(rest, on='restID').select('userID','restID','name','ratings','longitude','latitude','city')\
         .filter(col('userID') == userID).filter(col('city')==city).orderBy(col('ratings').desc()).show()
 
-    #Ordered by the highest rating
+def recommendationsRestPlan(model, userID, rest, city, times):
+    userRecs = model.recommendForAllUsers(500)
+    nrecommendations = userRecs \
+        .withColumn("rec_exp", explode('recommendations')) \
+        .select('userID', col("rec_exp.restID"), col("rec_exp.rating"))
+    selectTime= times.select ('restID','open_time','close_time')
+    recommendations = nrecommendations.join(rest, on='restID').select('userID', 'restID', 'name', 'ratings', 'longitude', 'latitude', 'city')
 
+    joinedtoTimes= recommendations.join(selectTime, on='restID', how='inner')
+
+    joinedtoTimes.show()
+
+    return joinedtoTimes
+    # nrecommendations.join(rest, on='restID').select('userID', 'restID', 'name', 'ratings', 'longitude', 'latitude',
+    #                                                 'city') \
+    #     .filter(col('userID') == userID).filter(col('city') == city).orderBy(col('ratings').desc()).show()
 
 ################ TO-DO ##########################
 # 2- extract it as an array for the api / or temp csv file

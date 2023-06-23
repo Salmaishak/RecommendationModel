@@ -1,5 +1,44 @@
 import math
 
+#Section for getting the recommendation and turing it into a usable array for the itinerary
+import pandas as pd
+
+
+def format_open_hours(df):
+    result = []
+
+    for index, row in df[['name', 'location', 'open_time', 'close_time']].iterrows():
+        # convert open and close times to 24-hour format
+        open_hour = int(row['open_time'].split(':')[0])
+        close_hour = int(row['close_time'].split(':')[0])
+
+        if 'PM' in row['close_time'] and close_hour < 12:
+            close_hour += 12
+
+        if 'AM' in row['open_time'] and open_hour == 12:
+            open_hour = 0
+
+        if 'PM' in row['open_time'] and open_hour < 12:
+            open_hour += 12
+
+        # format open and close times as string
+        open_str = f"{open_hour}{row['open_time'][-2:]}"
+        close_str = f"{close_hour}{row['close_time'][-2:]}"
+
+        # create dictionary with name, location, and open hours
+        result_dict = {
+            "name": row['name'],
+            "location": row['location'],
+            "open_hours": f"{open_str}-{close_str}"
+        }
+
+        result.append(result_dict)
+
+    return result
+
+
+
+
 data = {
     "Cairo": {
         "restaurants": [
@@ -139,4 +178,4 @@ def recommendation(city, starting_point, days):
             visited = []
 
 
-recommendation("Cairo", (30.0444, 31.2357), 1)
+# recommendation("Cairo", (30.0444, 31.2357), 1)
