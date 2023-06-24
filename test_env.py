@@ -42,7 +42,17 @@ def getRecommendationForPlanRest (userID, City):
     return df
 
 restaurants_df= getRecommendationForPlanRest(1,'Cairo')
+import pandas as pd
+from attractions_reccommendation import rbm
 
+attractions_data = pd.read_csv('attractions_reccommendation/attractions.csv')
+ratings_data = pd.read_csv('attractions_reccommendation/user_profiling3010.csv')  # all ratings 5
+
+attractions_df = rbm.rbm(attractions_data, ratings_data, 'cairo', 20)
+# print(type(df))
+# df=df['attraction_id']
+# print(len(df))
+print(attractions_df)
 # restaurants_df.show()
 
 # Import necessary libraries
@@ -58,8 +68,28 @@ from datetime import datetime
 restaurants_df_pandas= restaurants_df.toPandas()
 # Define a function to convert time format
 def convert_time_format(time_str):
-    time_obj = datetime.strptime(time_str, '%I:%M%p')
+    try:
+        # try parsing with format '%I:%M%p'
+        time_obj = datetime.strptime(str(time_str), '%I:%M%p')
+    except ValueError:
+        try:
+            # try parsing with format '%I:%M %p'
+            time_obj = datetime.strptime(str(time_str), ' %I:%M %p ')
+        except ValueError:
+            # raise an error if time string cannot be parsed
+            try:
+                # try parsing with format '%I:%M %p'
+                time_obj = datetime.strptime(str(time_str), '%I:%M %p')
+            except ValueError:
+                # raise an error if time string cannot be parsed
+                try:
+                    # try parsing with format '%I:%M %p'
+                    time_obj = datetime.strptime(str(time_str), ' %I:%M %p')
+                except ValueError:
+                # raise an error if time string cannot be parsed
+                  raise ValueError(f"Invalid time format: {time_str}")
     return time_obj.strftime('%I%p')
+
 
 # Apply the function to the 'open_time' column
 restaurants_df_pandas['open_time'] = restaurants_df_pandas['open_time'].apply(convert_time_format).str.replace('^0', '', regex=True)
@@ -69,8 +99,11 @@ restaurants_df_pandas['close_time'] = restaurants_df_pandas['close_time'].apply(
 
 # Display the updated dataframe
 print(restaurants_df_pandas)
-# attractions_df['opening_time'] = pd.to_datetime(attractions_df['opening_time']).dt.strftime('%-I%p')
-# attractions_df['closing_time'] = pd.to_datetime(attractions_df['closing_time']).dt.strftime('%-I%p')
+# attractions_df = df.toPandas()
+
+
+# attractions_df['open_time'] = pd.to_datetime(attractions_df['open_time']).dt.strftime('%-I%p')
+# attractions_df['close_time'] = pd.to_datetime(attractions_df['close_time']).dt.strftime('%-I%p')
 
 # Create a dictionary to store the data
 data = {
@@ -88,18 +121,27 @@ for _, row in restaurants_df_pandas.iterrows():
         "city": row['city']
     }
     data['restaurants'].append(restaurant)
-print (data)
+timesAttract= pd.read_csv('attractions_reccommendation/Attractions open hours.csv')
+
+select= timesAttract.loc[:, ['attraction_id','open_time','close_time']]
+print(select)
+joinedTimes = timesAttract.join(attractions_df.add_suffix('_ratings'), on='attraction_id', how='inner')
+print(joinedTimes)
+
+joinedTimes['open_time'] =joinedTimes['open_time'].apply(convert_time_format).str.replace('^0', '', regex=True)
+joinedTimes['close_time'] = joinedTimes['close_time'].apply(convert_time_format).str.replace('^0', '', regex=True)
 # Extract information from attractions dataframe and add to dictionary
-# for _, row in attractions_df.iterrows():
-#     attraction = {
-#         "name": row['name'],
-#         "location": (row['latitude'], row['longitude']),
-#         "opening_time": row['opening_time'],
-#         "closing_time": row['closing_time'],
-#         "city": row['city']
-#     }
-#     data['attractions'].append(attraction)
-#CODE TO REPLACE NULL IN ALL RESTAURANTS
+for _, row in joinedTimes.iterrows():
+    attraction = {
+        "attraction_name": row['attraction_name'],
+        "location": (row['Latitude'], row['Longitude']),
+        "open_time": row['open_time'],
+        "close_time": row['close_time'],
+        "city": row['city']
+    }
+    data['attractions'].append(attraction)
+print (data)
+# CODE TO REPLACE NULL IN ALL RESTAURANTS
 
 # timesCsv = "Restaurants/Allrestaurants.csv"
 # timesSpark = spark.read.csv(timesCsv, header=True)

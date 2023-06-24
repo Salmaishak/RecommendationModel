@@ -1,0 +1,432 @@
+﻿attraction_id,attraction_name,open_time,close_time,ratings,no_of_ratings,attraction_type,description,Latitude,Longitude,city,keywords
+1,Citadel of Saladin: , 9:00 AM , 5:00 PM,4.6,24755,Tourist attraction,"Sights and landmarks, Historic Sites",30.02875,31.25971,cairo,"Tourist attraction Sights and landmarks, Historic Sites"
+2,Cairo Tower: , 9:00 AM , 12:00 AM,4.3,23202,Tourist attraction,Observation Decks & Towers,30.04592,31.22429,cairo,Tourist attraction Observation Decks & Towers
+3,Khan el-Khalili: , 9:00 AM , 11:00 PM,4.4,45558,Bazar,Flea & Street Markets,30.04774,31.26225,cairo,Bazar Flea & Street Markets
+4,Al-Azhar Park: , 9:00 AM , 12:00 AM ,4.5,29934,Park,Parks,30.04076,31.26473,cairo,Park Parks
+5,Prince Mohamed Ali Palace (Al Manial Palace): , 9:00 AM , 4:00 PM,4.6,6439,Historical landmark,History Museums,30.02895,31.23001,cairo,Historical landmark History Museums
+6,Al-Azhar Mosque: , 9:00 AM , 5:00 PM,4.8,13719,Mosque,Religious Sites,30.04569,31.26269,cairo,Mosque Religious Sites
+7,Tahrir Square: ,06:00 AM, 12:00 AM,4.6,7900,Tourist attraction,Points of Interest & Landmarks,30.0444,31.23572,cairo,Tourist attraction Points of Interest & Landmarks
+8,Mosque-Madrasa of Sultan Hassan: , 9:00 AM , 5:00 PM,4.8,3372,Mosque,Historic Sites Religious Sites,30.03228,31.25617,cairo,Mosque Historic Sites Religious Sites
+9,Mosque of Ibn Tulun: , 9:00 AM , 5:00 PM,4.7,3463,Mosque,Historic Sites Religious Sites,30.02869,31.24939,cairo,Mosque Historic Sites Religious Sites
+10,Pharaonic Village: , 9:00 AM , 5:00 PM,4.3,13603,Tourist attraction,Historic Sites Points of Interest & Landmarks,29.99732,31.21478,giza,Tourist attraction Historic Sites Points of Interest & Landmarks
+11,The Coptic Museum: , 9:00 AM , 5:00 PM,4.5,893,Museum,Art Museums,30.00576,31.2304,cairo,Museum Art Museums
+12,Qalawun Complex: , 9:00 AM , 5:00 PM,4.7,749,Historical landmark,Historic Sites Religious Sites,30.0494,31.26096,cairo,Historical landmark Historic Sites Religious Sites
+13,Al-Hakim Mosque: , 9:00 AM , 5:00 PM,4.7,8214,Mosque,Religious Sites,30.05455,31.26351,cairo,Mosque Religious Sites
+14,Museum of Islamic Art in Cairo: , 9:00 AM , 5:00 PM,4.6,4047,Museum,Art Museums History Museums,30.04472,31.25272,cairo,Museum Art Museums History Museums
+15,Mosque of Muhammad Ali: , 9:00 AM , 5:00 PM,4.7,4290,Mosque,Historic Sites Religious Sites,30.0287,31.25991,cairo,Mosque Historic Sites Religious Sites
+16,Gayer-Anderson Museum: , 9:00 AM , 5:00 PM,4.6,1261,Museum,Historic Sites Art Museums Archaeological,30.02833,31.25074,cairo,Museum Historic Sites Art Museums Archaeological
+17,Abdeen Palace Museum: , 9:00 AM , 4:00 PM,4.6,"10,074",Museum,History Museums Historical place,30.04321,31.24722,cairo,Museum History Museums Historical place
+18,The National Museum of Egyptian Civilization: , 9:00 AM , 5:00 PM,4.7,14633,Museum,History Museums,30.00841,31.24825,cairo,Museum History Museums
+19,The Hanging Church: , 9:00 AM , 5:00 PM,4.6,5100,Church,Architectural Buildings Religious Sites,30.00527,31.23018,cairo,Church Architectural Buildings Religious Sites
+20,Talaat Harb Square: ,06:00 AM, 12:00 AM,4.5,14732,Historical landmark,Historic street,30.0476,31.23845,cairo,Historical landmark Historic street
+21,Royal Chariots Museum: , 9:00 AM , 5:00 PM,4.4,473,Museum,History Museums,30.05591,31.23132,cairo,Museum History Museums
+22,Bab al-Futuh: , 9:00 AM , 5:00 PM,4.6,6390,Historical landmark,Historic Sites Points of Interest & Landmarks Historic Walking Areas Castles,30.05536,31.26341,cairo,Historical landmark Historic Sites Points of Interest & Landmarks Historic Walking Areas Castles
+23,Al-Hussein Mosque: , 9:00 AM , 5:00 PM,4.6,25106,Mosque,Points of Interest & Landmarks Religious Sites,30.04767,31.26319,cairo,Mosque Points of Interest & Landmarks Religious Sites
+24,Bab Zuweila: , 9:00 AM , 5:00 PM,4.6,839,Historical landmark,Historic Sites Points of Interest & Landmarks Castles,30.0427,31.25778,cairo,Historical landmark Historic Sites Points of Interest & Landmarks Castles
+25,Lazoghly Square Lazoghly Statue: ,06:00 AM, 12:00 AM,4.4,183,Tourist attraction,Historic street,30.03913,31.24034,cairo,Tourist attraction Historic street
+26,El Andalos Park: ,06:00 AM, 12:00 AM,4.1,809,Park,garden,30.0442,31.22741,cairo,Park garden
+27,House of Suhaymi: , 9:00 AM , 5:00 PM,4.6,1624,Historical landmark,Speciality Museums,30.0521,31.26249,cairo,Historical landmark Speciality Museums
+28,Al Horreya Garden: ,06:00 AM, 12:00 AM,4.2,4046,Garden,,30.04147,31.22579,cairo,Garden
+29,Townhouse Gallery: , 12:00 PM , 9:00 PM,4.5,242,Art Gallery,,30.04907,31.23804,cairo,Art Gallery
+30,Aqsunqur Mosque: , 9:00 AM , 5:00 PM,4.7,435,Mosque,Religious Sites,30.03611,31.26028,cairo,Mosque Religious Sites
+31,Saad Zaghloul Statue: ,06:00 AM, 12:00 AM,4.4,138,Historical landmark,,30.0434,31.22708,cairo,Historical landmark
+32,St Sergius and St Bacchus Church: , 9:00 AM , 4:00 PM,4.7,1163,Church,Churches & Cathedrals,30.00628,31.23067,cairo,Church Churches & Cathedrals
+33,Pyramid of Djoser: , 9:00 AM , 5:00 PM,4.7,4940,Cultural landmark,Ancient Ruins Points of Interest & Landmarks,29.87132,31.21654,giza,Cultural landmark Ancient Ruins Points of Interest & Landmarks
+34,Saqqara Necropolis: , 9:00 AM , 5:00 PM,4.8,998,Historical landmark,Historic Sites Ancient Ruins,29.86846,31.21682,giza,Historical landmark Historic Sites Ancient Ruins
+35,El Obour Park: ,06:00 AM, 12:00 AM,4.3,363,Park,,30.05623,31.21762,cairo,Park
+36,Aquarium Grot+ Garden: ,06:00 AM, 12:00 AM,3.8,3966,Park,,30.0564,31.21908,cairo,Park
+37,Masjid Omar Makram: , 9:00 AM , 5:00 PM,4.5,2213,Mosque,Religious Sites,30.0432,31.23395,cairo,Mosque Religious Sites
+38,Pyramid of Khafre: , 8:00 AM , 5:00 PM,4.7,974,Historical landmark,Historic Sites,29.97613,31.13093,giza,Historical landmark Historic Sites
+39,Masjid Sultan Abo Elelaa: , 9:00 AM , 5:00 PM,4.6,2002,Mosque,Religious Sites,30.0564,31.22996,cairo,Mosque Religious Sites
+40,Bent Pyramid: , 8:00 AM , 5:00 PM,4.7,1178,Historical landmark,Ancient Ruins Points of Interest & Landmarks Architectural Buildings,29.79045,31.20932,giza,Historical landmark Ancient Ruins Points of Interest & Landmarks Architectural Buildings
+41,The Child Museum: , 9:00 AM , 4:00 PM,4.4,1152,Museum,Speciality Museums Childrens,30.10224,31.33695,cairo,Museum Speciality Museums Childrens
+42,Red Pyramid: , 8:00 AM , 5:00 PM,4.8,1477,Historical landmark,,29.80859,31.20661,giza,Historical landmark
+43,Qasr El Nil Bridge: ,06:00 AM, 12:00 AM,4.6,2024,Bridge,,30.04385,31.23019,cairo,Bridge
+44,Abdeen Garden: ,06:00 AM, 12:00 AM,4.4,1705,Park,,30.04385,31.24587,cairo,Park
+45,Khedive or Zamalek tree: ,06:00 AM, 12:00 AM,4.8,25,Park,,30.04592,31.22429,cairo,Park
+46,Synagogue Ben Ezra: , 9:00 AM , 4:00 PM,4.4,197,Synagogue,Historic Sites Religious Sites,30.00573,31.23103,cairo,Synagogue Historic Sites Religious Sites
+47,Islamic Ceramics Museum: , 9:00 AM , 5:00 PM,3.9,64,Museum,Art Museums,30.05717,31.22265,cairo,Museum Art Museums
+48,Gayer-Anderson Museum: , 9:00 AM , 5:00 PM,4.6,"1,179",Museum,Historic Sites Art Museums Archaeological,30.02833,31.25074,cairo,Museum Historic Sites Art Museums Archaeological
+49,Mahmoud Mukhtar Museum: , 9:00 AM , 5:00 PM,4.6,252,Museum,Speciality Museums Art,30.0407,31.22287,cairo,Museum Speciality Museums Art
+50,The Coptic Museum: , 9:00 AM , 5:00 PM,4.5,867,Museum,Art Museums,30.00576,31.2304,cairo,Museum Art Museums
+51,National Military Museum Egypt: , 9:00 AM , 4:00 PM,4.3,"4,517",Museum,Military Museums,30.03085,31.26256,cairo,Museum Military Museums
+52,Gamal Abdel Nasser Museum: , 9:00 AM , 4:00 PM,4.4,221,Museum,Historical place,30.08654,31.3107,cairo,Museum Historical place
+53,Egyptian Geology Museum: , 9:00 AM , 3:00 PM,4.1,374,Museum,Science Museums,29.9964,31.2289,cairo,Museum Science Museums
+54,Abdeen Palace Museum: , 9:00 AM , 3:00 PM,4.4,"1,122",Museum,Speciality Museums Childrens,30.10224,31.33695,cairo,Museum Speciality Museums Childrens
+55,Taha Hussein Museum: , 9:00 AM , 2:00 PM,4.5,"9,657",Museum,History Museums Historical place,30.04321,31.24722,cairo,Museum History Museums Historical place
+56,Luxor Museum: , 9:00 AM , 9:00 PM,4.3,239,Museum,History Museums,30.00501,31.18498,giza,Museum History Museums
+57,The Egyptian Museum: , 9:00 AM , 5:00 PM,4.7,"4,765",Museum,History Museums,25.70761,32.64455,luxor,Museum History Museums
+58,Prince Mohamed Ali Palace (Al Manial Palace): , 9:00 AM , 4:00 PM,4.5,"6,617",Museum,History Museums Archaeological,30.04829,31.23375,cairo,Museum History Museums Archaeological
+59,Museum Of Modern Egyptian Art: , 9:00 AM , 3:00 PM,4.6,"6,254",Palace,,30.02895,31.23001,cairo,Palace
+60,Umm Kulthum Museum: , 9:00 AM , 4:00 PM,4.2,229,Museum,Art,30.04369,31.22468,cairo,Museum Art
+61,Grand Egyptian Museum: , 8:00 AM , 4:00 PM,4.3,705,Museum,Heritage Biographical,30.00745,31.22529,cairo,Museum Heritage Biographical
+62,Egyptian Textiles Museum: , 9:00 AM , 5:00 PM,4.6,396,Museum,History Museums,29.99437,31.1191,giza,Museum History Museums
+63,Khalil Museum: , 10:00 AM , 6:00 PM,4.6,128,Museum,Speciality Museums,30.00772,31.25999,cairo,Museum Speciality Museums
+64,Panorama Oc+ber: , 9:00 AM , 8:00 PM,4.6,441,Museum,Art Museums,30.0356,31.21959,cairo,Museum Art Museums
+65,The Royal Mummies Hall: , 9:00 AM , 3:00 PM,4.4,"7,472",Museum,Speciality Museums War,30.07427,31.30681,cairo,Museum Speciality Museums War
+66,Geographical Association of Egypt: , 9:00 AM , 3:00 PM,4.7,826,Museum,,30.00815,31.24826,cairo,Museum
+67,Mostafa Kamel Museum: , 9:00 AM ,  9:00 PM,4.4,75,Association or organization,,30.04112,31.23605,cairo,Association or organization
+68,Egyptian Air Force Museum: , 9:00 AM , 2:00 PM,4.5,135,Museum,Speciality Museums,30.02961,31.25722,cairo,Museum Speciality Museums
+69,Egyptian National Library Museum: , 9:00 AM , 5:00 PM,4.7,"1,045",Museum,Points of Interest & Landmarks,30.09662,31.35162,cairo,Museum Points of Interest & Landmarks
+70,Foustat Traditional Crafts Center: , 9:00 AM , 4:00 PM,4.8,12,Museum,,30.04433,31.25233,cairo,Museum
+71,Pharaonic Papyrus Museum: , 9:00 AM , 4:00 PM,4.3,185,Museum,History Museums,30.00637,31.23472,cairo,Museum History Museums
+72,Beshtak Palace: , 9:00 AM , 4:00 PM,4.4,517,Museum,Speciality & Gift Shops,29.99118,31.15238,cairo,Museum Speciality & Gift Shops
+73,Beit Al-Razzaz: , 9:00 AM , 4:00 PM,4.5,395,Museum,Historic Sites Palace,30.05051,31.26189,cairo,Museum Historic Sites Palace
+74,Alexandria National Museum: , 9:00 AM , 4:00 PM,4.7,72,Historical landmark,mansion,30.03752,31.2595,cairo,Historical landmark mansion
+75,Royal Jewellery Museum: , 9:00 AM , 4:00 PM,4.4,"2,105",Museum,History Museums,31.20074,29.9132,Alexandria,Museum History Museums
+76,National Police Museum: , 9:00 AM , 2:00 PM,4.6,"6,001",Museum,History Museums,31.24061,29.96328,Alexandria,Museum History Museums
+77,"Museum of Illusions, Cairo: ", 10:00 AM , 11:00 PM,3.9,95,Museum,History Museums,30.03079,31.25991,cairo,Museum History Museums
+78,Ramses Wissa Wassef Art Center: , 9:00 AM , 4:00 PM,4.4,"1,168",Museum,Speciality Museums Art Museums,30.0775,30.95138,cairo,Museum Speciality Museums Art Museums
+79,Karmet Ibn Hanie Cultural Center Ahmed Shawky Museum: , 9:00 AM , 5:00 PM,4.6,117,Art Gallery,,29.96875,31.17596,giza,Art Gallery
+80,Nation's House Museum: , 9:00 AM , 5:00 PM,4.3,158,Cultural center,,30.02126,31.21743,cairo,Cultural center
+81,Rokn Farouk Museum: , 9:00 AM , 5:00 PM,4.3,219,Museum,History Museums,30.03801,31.23746,cairo,Museum History Museums
+82,Islamic Ceramics Museum: , 9:00 AM , 5:00 PM,4.3,"1,238",Museum,Heritage,29.847,31.29472,cairo,Museum Heritage
+83,Al-Azhar Park: , 9:00 AM , 12:00 AM ,3.9,63,Museum,Art Museums,30.05717,31.22265,cairo,Museum Art Museums
+84,Al Horreya Garden: ,06:00 AM, 12:00 AM,4.5,30165,Park,,30.04076,31.26473,cairo,Park
+85,Manial Garden: , 9:00 AM , 5:00 PM,4.2,4045,Garden,Botanical,30.04147,31.22579,cairo,Garden Botanical
+86,Umm Kulthum Park: ,06:00 AM, 12:00 AM,4.2,310,Park,garden,30.02894,31.23006,cairo,Park garden
+87,El Obour Park: , 9:00 AM , 11:00 PM,4.1,1505,Park,,30.03108,31.22562,cairo,Park
+88,Aquarium Grot+ Garden: ,06:00 AM, 12:00 AM,4.3,363,Park,,30.22834,31.47989,cairo,Park
+89,Gezira Island: ,06:00 AM, 12:00 AM,3.8,3965,Park,,30.0564,31.21908,cairo,Park
+90,Fustat Park: ,06:00 AM, 12:00 AM,4.1,40,Park,,30.04514,31.22811,cairo,Park
+91,Dar-Uloom Park: ,06:00 AM, 12:00 AM,3.8,5598,Park,,30,31.23333,cairo,Park
+92,Play Time Park: ,06:00 AM, 12:00 AM,3.9,940,Park,,30.03436,31.23591,cairo,Park
+93,The International Park: ,06:00 AM, 12:00 AM,4.3,586,Park,,30.06984,31.22703,cairo,Park
+94,Ebn Sinder Park: ,06:00 AM, 12:00 AM,4.1,22154,Park,city,30.04955,31.33649,cairo,Park city
+95,Arab Mohammadi Park: , 9:00 AM , 5:00 PM,3.7,2100,Park,,30.08965,31.30278,cairo,Park
+96,The Water Park Faculty of Agriculture: , 10:00 AM , 5:00 PM,3.7,435,Park,,30.07651,31.27951,cairo,Park
+97,Al-Azhar Park Fountain: , 9:00 AM , 12:00 AM ,4.3,158,Park,,30.01926,31.21087,cairo,Park
+98,Abdeen Park: ,06:00 AM, 12:00 AM,4.5,22,Garden,park,30.04076,31.26473,cairo,Garden park
+99,Dokki Public Nile View: ,06:00 AM, 12:00 AM,4.4,1705,Park,,30.04385,31.24587,cairo,Park
+100,Mamsha Ahl Misr: ,06:00 AM, 12:00 AM,4.5,13,Park,,30.03945,31.20253,cairo,Park
+101,Golf Park And Dog Park: ,06:00 AM, 12:00 AM,4.5,3970,Tourist attraction,,30.06076,31.22747,cairo,Tourist attraction
+102,Merryland Park: ,06:00 AM, 12:00 AM,4.3,595,Park,National Dog,30.07996,31.3308,cairo,Park National Dog
+103,The Chinese Garden: ,06:00 AM, 12:00 AM,4.2,16200,Park,,30.09793,31.31898,cairo,Park
+104,Child's Park: ,06:00 AM, 12:00 AM,4.3,122,Garden,,30.06524,31.31138,cairo,Garden
+105,Nature Stillness Park: ,06:00 AM, 12:00 AM,4.2,13963,Park,,30.06196,31.3471,cairo,Park
+106,Mokkatam Dog Park: ,06:00 AM, 12:00 AM,3.7,75,Park,,30.11386,31.33632,cairo,Park
+107,Azbakeya Garden: ,06:00 AM, 12:00 AM,4,473,Park,dog,30.01671,31.28508,cairo,Park dog
+108,Orman Garden: ,06:00 AM, 12:00 AM,3.8,5403,Garden,,30.05177,31.24779,cairo,Garden
+109,My Park: ,06:00 AM, 12:00 AM,4.2,12526,Garden,Botanical,30.02904,31.21297,cairo,Garden Botanical
+110,Rawdet ElNil Garden: ,06:00 AM, 12:00 AM,3.6,20,Park,,29.9619,31.27079,cairo,Park
+111,FAMILY PARK: , 10:00 AM , 12:00 AM ,4.1,195,Garden,community,30.07621,31.22853,cairo,Garden community
+112,Fostat City: ,06:00 AM, 12:00 AM,4.4,19509,Park,,30.08108,31.50177,cairo,Park
+113,Al Zohriya Garden: ,06:00 AM, 12:00 AM,4.4,57,Park,city,30,31.23333,cairo,Park city
+114,Kids Park: ,06:00 AM, 12:00 AM,4.2,27,Garden,Botanical,30.04582,31.22568,cairo,Garden Botanical
+115,Lotus Park: ,06:00 AM, 12:00 AM,4.3,47,Park,,29.96616,31.24142,cairo,Park
+116,Paradise Park: ,06:00 AM, 12:00 AM,4.1,916,Park,,30.04074,31.33517,cairo,Park
+117,Cairo Tourist Walk: ,06:00 AM, 12:00 AM,4.2,692,Park,,30.06412,31.33006,cairo,Park
+118,The Maidan Gardens: ,06:00 AM, 12:00 AM,4.9,15,Hiking area,,30.04442,31.23571,cairo,Hiking area
+119,Bella Garden: ,06:00 AM, 12:00 AM,4.5,505,Park,Garden,29.95658,31.26712,cairo,Park Garden
+120,Hadiqet Nil Elmaadi: ,06:00 AM, 12:00 AM,4.3,330,Garden,Park,30.11661,31.35131,cairo,Garden Park
+121,Amusement Park Maadi Island: , 10:00 AM , 12:00 AM ,3.7,403,Park,,29.92999,31.28083,cairo,Park
+122,Cairo Park: ,06:00 AM, 12:00 AM,3.9,54,Park,,29.96535,31.2381,cairo,Park
+123,Naguib Mahfouz Park: ,06:00 AM, 12:00 AM,3.8,57,Park,,30.1025,31.56307,cairo,Park
+124,Cairo Land: , 10:00 AM , 12:00 AM ,4,458,Park,,30.0498,31.34292,cairo,Park
+125,Jewel Aqua Park: , 10:00 AM , 6:00 PM,4,170,Park,water,30.04449,31.2427,cairo,Park water
+126,Bikes Park Mostqbal City: ,06:00 AM, 12:00 AM,4,1449,Park,water,30.04751,31.40129,cairo,Park water
+127,KidZania Cairo: , 10:00 AM , 8:00 PM,4.1,141,Park,,30.1704,31.55526,cairo,Park
+128,Dream Park: , 10:00 AM , 12:00 AM ,4.6,7712,Tourist attraction,Theme park Amusment,30.03128,31.40554,cairo,Tourist attraction Theme park Amusment
+129,Helmya Garden: ,06:00 AM, 12:00 AM,4.3,22203,Park,Amusment Park theme,29.96468,31.05773,giza,Park Amusment Park theme
+130,Al Moez Ldin Allah Al Fatmi: ,06:00 AM, 12:00 AM,3.9,714,Garden,Botanical,30.1088,31.32659,cairo,Garden Botanical
+131,Mosque Sultan Al-Zahir Barquq: , 9:00 AM , 5:00 PM,4.7,1105,Notable street,,30.05094,31.26158,cairo,Notable street
+132,Al-Aqmar Mosque: ,06:00 AM, 12:00 AM,4.9,8,Mosque,Religious Sites,30.0501,31.26122,cairo,Mosque Religious Sites
+133,Qalawun Complex: , 9:00 AM , 4:00 PM,4.7,1254,Mosque,Religious Sites,30.0516,31.26204,cairo,Mosque Religious Sites
+134,New Khan El Khalili Center: , 10:00 AM , 10:00 PM,4.7,768,Historical landmark,,30.04941,31.261,cairo,Historical landmark
+135,Khan El Khalili Restaurant et Naguib Mahfouz Coffee Shop: , 10:00 AM , 12:00 AM ,4.2,151,Shopping mall,,30.0487,31.26128,cairo,Shopping mall
+136,El Fishawy Cafe: ,06:00 AM, 12:00 AM ,4.3,"3,497",Cafe,,30.04807,31.26162,cairo,Cafe
+137,Al-Hussain Mosque: ,06:00 AM, 12:00 AM,3.9,"3,062",Cafe,,30.04753,31.26236,cairo,Cafe
+138,Mosque-Madrasa of Sultan Hassan: , 9:00 AM , 5:00 PM,4.6,"25,191",Mosque,Religious Sites,30.04777,31.26338,cairo,Mosque Religious Sites
+139,Al-Rifa'i Mosque: , 9:00 AM , 5:00 PM,4.8,3397,Mosque,Religious Sites,30.03228,31.25617,cairo,Mosque Religious Sites
+140,Mosque of Ibn Tulun: , 9:00 AM , 5:00 PM,4.8,2374,Mosque,Religious Sites,30.03271,31.257,cairo,Mosque Religious Sites
+141,Qalawun Complex: , 9:00 AM , 4:00 PM,4.7,3477,Mosque,Religious Sites,30.02869,31.24939,cairo,Mosque Religious Sites
+142,Sultan al-Mu'ayyad Mosque: , 9:00 AM , 4:00 PM,4.7,768,Historical landmark,,30.0494,31.26096,cairo,Historical landmark
+143,Aqsunqur Mosque: , 9:00 AM , 5:00 PM,4.7,969,Mosque,Religious Sites,30.04334,31.25744,cairo,Mosque Religious Sites
+144,Masjid Sultan Abo Elelaa: , 9:00 AM , 5:00 PM,4.7,440,Mosque,Religious Sites,30.03611,31.26028,cairo,Mosque Religious Sites
+145,Mosque of Muhammad Ali: , 9:00 AM , 4:00 PM,4.7,1254,Mosque,Religious Sites,30.05157,31.26194,cairo,Mosque Religious Sites
+146,Masjid Al-Mahmodyah: , 9:00 AM , 5:00 PM,4.6,2003,Mosque,Religious Sites,30.05645,31.22992,cairo,Mosque Religious Sites
+147,Al-Hussain Mosque in Cairo: ,06:00 AM, 12:00 AM ,4.7,4316,Mosque,Religious Sites,30.0287,31.25991,cairo,Mosque Religious Sites
+148,Al-Hakim Mosque: ,06:00 AM, 12:00 AM,4.7,78,Mosque,Religious Sites,30.03161,31.25774,cairo,Mosque Religious Sites
+149,Mosque of Qanibay al-Rammah: , 9:00 AM , 5:00 PM,4.6,25191,Mosque,Religious Sites,30.04767,31.26319,cairo,Mosque Religious Sites
+150,Mosque of al-Salih Tala'i: , 9:00 AM , 5:00 PM,4.7,8230,Mosque,Religious Sites,30.05455,31.26351,cairo,Mosque Religious Sites
+151,Masjid Elmoaued Sheikh: , 9:00 AM , 5:00 PM,4.6,75,Mosque,Religious Sites,30.03227,31.25795,cairo,Mosque Religious Sites
+152,Soliman Agha El Selehdar Mosque: , 9:00 AM , 5:00 PM,4.6,164,Mosque,Religious Sites,30.04235,31.25811,cairo,Mosque Religious Sites
+153,Al-Azhar Mosque: ,06:00 AM, 12:00 AM,4.7,132,Historical landmark,Religious Sites Mosque,30.04295,31.2578,cairo,Historical landmark Religious Sites Mosque
+154,Al Zahir Baybars Mosque: ,06:00 AM, 12:00 AM,4.6,251,Mosque,Religious Sites,30.05544,31.25165,cairo,Mosque Religious Sites
+155,Al-Nour Mosque: ,06:00 AM, 12:00 AM,4.8,13807,Mosque,Religious Sites,30.04569,31.26269,cairo,Mosque Religious Sites
+156,Abu Dahab Mosque: ,06:00 AM, 12:00 AM,4.5,3181,Mosque,Religious Sites,30.06263,31.26303,cairo,Mosque Religious Sites
+157,Abo Heriba mosque,06:00 AM, 12:00 AM,4.7,7400,Mosque,Religious Sites,30.07528,31.28306,cairo,Mosque Religious Sites
+158,Amir Khayrbak Funerary Complex:,06:00 AM, 12:00 AM,4.7,90,Mosque,Religious Sites,30.04597,31.26193,cairo,Mosque Religious Sites
+159,Ad-Demerdash Mosque:,06:00 AM, 12:00 AM,4.7,119,Mosque,Religious Sites,30.04143,31.25962,cairo,Mosque Religious Sites
+160,Prince Qayson mosque: ,06:00 AM, 12:00 AM,4.7,73,Mosque,Religious Sites,30.03572,31.26016,cairo,Mosque Religious Sites
+161,Sulayman Pasha Mosque: ,06:00 AM, 12:00 AM,4.5,13,Mosque,Religious Sites,30.07518,31.27729,cairo,Mosque Religious Sites
+162,Amr ibn Al-A'as Mosque: ,09:00 AM, 5:00 PM,4.7,570,Mosque,Religious Sites,30.03808,31.25469,cairo,Mosque Religious Sites
+163,Sinan Pasha Mosque: ,09:00 AM, 4:00 PM,4.8,40,Mosque,Religious Sites,30.03105,31.26453,cairo,Mosque Religious Sites
+164,Al-Fath Mosque,06:00 AM, 12:00 AM,4.7,9029,Mosque,Religious Sites,30.01005,31.23313,cairo,Mosque Religious Sites
+165,Mosque of Gamal El-Din El-Ustadar,06:00 AM, 12:00 AM,4.7,156,Mosque,Religious Sites,30.06222,31.22958,cairo,Mosque Religious Sites
+166,Masged and Madraset Soltan Hassn,06:00 AM, 12:00 AM,4.5,581,Mosque,Religious Sites,30.09782,31.27572,cairo,Mosque Religious Sites
+167,Wekalet El Ghoury,06:00 AM, 12:00 AM,4.9,13,Mosque,Religious Sites,30.03467,31.25439,cairo,Mosque Religious Sites
+168,Mohamed Ali Mosque: ,08:00 AM, 5:00 PM,4.7,6913,Historical landmark,Religious Sites Mosque,30.03287,31.25628,cairo,Historical landmark Religious Sites Mosque
+169,Sultan Al-Ashraf Qaytbay Mosque and Mausoleum,06:00 AM, 12:00 AM,4.6,1360,Tourist attraction,Performing arts theater,30.04605,31.26021,cairo,Tourist attraction Performing arts theater
+170,Alkekhia Mosque,06:00 AM, 12:00 AM,4.7,1647,Mosque,Religious Sites,30.04442,31.23571,cairo,Mosque Religious Sites
+171,Gamal Abdel Nasser Mosque,06:00 AM, 12:00 AM,4.6,1068,Mosque,Religious Sites,30.04749,31.26004,cairo,Mosque Religious Sites
+172,Masjid El Fath,06:00 AM, 12:00 AM,4.7,520,Mosque,Religious Sites,30.0493,31.24658,cairo,Mosque Religious Sites
+173,ElRahman ELRahim Mosque,06:00 AM, 12:00 AM,4.5,170,Mosque,Religious Sites,30.08342,31.29441,cairo,Mosque Religious Sites
+174,Sayeda Aisha Mosque,06:00 AM, 12:00 AM,4.7,10233,Mosque,Religious Sites,30.05984,31.24617,cairo,Mosque Religious Sites
+175,Aisha Fahmy Palace,06:00 AM, 12:00 AM,4.9,7,Mosque,Religious Sites,30.06131,31.28369,cairo,Mosque Religious Sites
+176,El-Kobba Palace,06:00 AM, 12:00 AM,5,7,Mosque,Religious Sites,30.02467,31.25679,cairo,Mosque Religious Sites
+177,Madrasa of Sarghatmish,06:00 AM, 12:00 AM,4.6,2919,Art Gallery,Historic Sites Points of Interest & Landmarks Architectural Buildings,30.05916,31.2249,cairo,Art Gallery Historic Sites Points of Interest & Landmarks Architectural Buildings
+178,Bab El Nasr,06:00 AM, 12:00 AM,4.7,88,Palace,,30.09826,31.30416,cairo,Palace
+179,Madrasa And Dome Of Sultan Al-Nassir Mohammed Ibn Qalawun:, 9:00 AM , 4:00 PM,4.6,27,Mosque,Religious Sites,30.03033,31.25128,cairo,Mosque Religious Sites
+180,Mosque Sanjar Al-Jawli,06:00 AM, 12:00 AM,4.5,2134,Historical landmark,,30.05409,31.26484,cairo,Historical landmark
+181,Masjid Al Rahman Al Rahim,06:00 AM, 12:00 AM,4.6,432,Mosque,Religious Sites,30.0498,31.2609,cairo,Mosque Religious Sites
+182,Bab Zuweila:, 9:00 AM , 5:00 PM,4.7,15,Historical landmark,Religious Sites Mosque,30.02961,31.24723,cairo,Historical landmark Religious Sites Mosque
+183,Kazndar Mosque,06:00 AM, 12:00 AM,4.8,5582,Mosque,Religious Sites,30.06131,31.28369,cairo,Mosque Religious Sites
+184,El Qalaa,06:00 AM, 12:00 AM,4.6,884,Historical landmark,Historic Sites Points of Interest & Landmarks Castles,30.0427,31.25778,cairo,Historical landmark Historic Sites Points of Interest & Landmarks Castles
+185,Masjed Al Ashraf Al Gamei Al Kabeer,06:00 AM, 12:00 AM,4.6,1073,Mosque,Religious Sites,30.08265,31.2456,cairo,Mosque Religious Sites
+186,City Of The Dead Cairo Egypt,06:00 AM, 12:00 AM,4.7,86,Historical landmark,,30.09031,31.25914,cairo,Historical landmark
+187,Bayt Almaamar Almasry,06:00 AM, 12:00 AM,4.8,836,Mosque,Religious Sites,30.02179,31.25153,cairo,Mosque Religious Sites
+188,The complex of religions,06:00 AM, 12:00 AM,4.2,137,Cemetery,necropolis,30.04345,31.27235,cairo,Cemetery necropolis
+189,Al-Hosary Mosque,06:00 AM, 12:00 AM,4.6,286,Historical place,,30.03249,31.2583,cairo,Historical place
+190,Al Rahman Mosque,06:00 AM, 12:00 AM,4.6,297,Religious institution,Religious Sites,30.00652,31.2323,cairo,Religious institution Religious Sites
+191,Southern Cemetery of Al Basatin,06:00 AM, 12:00 AM,4.7,51594,Mosque,Religious Sites,30.04442,31.23571,cairo,Mosque Religious Sites
+192,Firdous Mosque,06:00 AM, 12:00 AM,4.7,190,Mosque,Religious Sites,30.04678,31.23996,cairo,Mosque Religious Sites
+193,The Hanging Church:, 9:00 AM , 5:00 PM,4.2,1176,Historical landmark,cemetry necropolis,30.02103,31.26483,cairo,Historical landmark cemetry necropolis
+194,Museum Of Modern Egyptian Art:, 9:00 AM , 4:00 PM,4.8,46,Mosque,Religious Sites,30.04442,31.23571,cairo,Mosque Religious Sites
+195,El Sayed Ahmad Albadawy Mosque,06:00 AM, 12:00 AM,4.6,5182,Church,Architectural Buildings Religious Sites,30.00527,31.23018,cairo,Church Architectural Buildings Religious Sites
+196,Sayidi Ibrahim El Dessouky Mosque,06:00 AM, 12:00 AM,4.2,247,Tourist attraction,Art Museums,30.04369,31.22468,cairo,Tourist attraction Art Museums
+197,El Nabi Daniel Mosque,06:00 AM, 12:00 AM,4.5,2779,Mosque,Religious Sites,30.04442,31.23571,cairo,Mosque Religious Sites
+198,Abbasi Mosque,06:00 AM, 12:00 AM,4.5,3274,Mosque,Religious Sites,30.04442,31.23571,cairo,Mosque Religious Sites
+199,Mosque of Sidi Abdullah Ibn al-Harith,06:00 AM, 12:00 AM,4.5,1699,Mosque,Religious Sites,31.19492,29.90234,alexandria,Mosque Religious Sites
+200,Al-Motawally Al-Trini Al-Kabeer mosque,06:00 AM, 12:00 AM,4.6,216,Mosque,Religious Sites,30.04442,31.23571,cairo,Mosque Religious Sites
+201,Attarine Mosque,06:00 AM, 12:00 AM,4.4,53,Mosque,Religious Sites,30.04442,31.23571,cairo,Mosque Religious Sites
+202,National Military Museum Egypt,09:00 AM, 4:00 PM,4.7,124,Mosque,Religious Sites,30.04442,31.23571,cairo,Mosque Religious Sites
+203,Al-Gawhara Palace,06:00 AM, 12:00 AM,4.6,502,Mosque,Religious Sites,31.19521,29.89899,alexandria,Mosque Religious Sites
+204,Orman Garden,06:00 AM, 12:00 AM,4.3,"4,531",Museum,Warfare exhibits dating to ancient times museum,30.03085,31.26256,cairo,Museum Warfare exhibits dating to ancient times museum
+205,Saint Barbara Church Complex,06:00 AM, 12:00 AM,4,95,Palace,Palatial museum housing cultural relics,30.02799,31.25941,cairo,Palace Palatial museum housing cultural relics
+206,Umm Kulthum Museum: ,09:00 AM, 4:00 PM,4.2,"12,540",Garden,Huge complex of flowers & native plants,30.02904,31.21297,cairo,Garden Huge complex of flowers & native plants
+207,Aquarium Grot+ Garden: ,09:00 AM, 5:00 PM,4.8,72,Church,Church and architecture Religious sites,30.00608,31.23133,cairo,Church Church and architecture Religious sites
+208,Valley Temple of Khafre: ,09:00 AM, 5:00 PM,4.3,761,Museum,biographical museum,30.00745,31.22529,cairo,Museum biographical museum
+209,Pyramid of Sahure,06:00 AM, 12:00 AM,3.8,"3,992",Garden,Leafy park with man-made caves,30.0564,31.21908,cairo,Garden Leafy park with man-made caves
+210,St. George's church,06:00 AM, 12:00 AM,4.6,338,Historic,Ancient egypt and ancient history historic sites,29.97474,31.13836,giza,Historic Ancient egypt and ancient history historic sites
+211,Mahmoud Mukhtar Museum: ,09:00 AM, 4:00 PM,4.5,88,Historical landmark,Ancient complex of pyramids & temples historic sites,29.89763,31.20339,giza,Historical landmark Ancient complex of pyramids & temples historic sites
+212,Rhoda Island,06:00 AM, 12:00 AM,4.7,371,Church,Religious Sites Round church with an ornate interior,30.0063,31.23009,cairo,Church Religious Sites Round church with an ornate interior
+213,Manasterly Palace,06:00 AM, 12:00 AM,4.5,261,Museum,"Museum, sculpture and art",30.0407,31.22287,cairo,"Museum Museum, sculpture and art"
+214,Pyramid of Djedefre,06:00 AM, 12:00 AM,4.4,224,island,,30.0225,31.22611,cairo,island
+215,Zoological Museum,06:00 AM, 12:00 AM,4.2,821,Palace,Grand historic building & music venue museum,30.00718,31.22482,cairo,Palace Grand historic building & music venue museum
+216,Picasso Art Gallery,06:00 AM, 12:00 AM,4.2,77,Tourist attraction,Ruined ancient site atop a rocky plateau,30.03226,31.07471,giza,Tourist attraction Ruined ancient site atop a rocky plateau
+217,Maadi Island: ,09:00 AM, 10:00 PM,4.7,181,Museum,Speciality Museums zoolgy,30.02077,31.21492,giza,Museum Speciality Museums zoolgy
+218,Pyramid of Neferirkare,06:00 AM, 12:00 AM,4.6,311,Art Gallery,"Pablo picasso, art and painting",30.06151,31.22242,cairo,"Art Gallery Pablo picasso, art and painting"
+219,Unfinished Pyramid,06:00 AM, 12:00 AM,4.2,"8,124",Garden,,29.9658,31.23931,cairo,Garden
+220,Topaz Bazaar,06:00 AM, 12:00 AM,4.4,29,Tourist attraction,Ancient memorial & temple complex Historic Sites,29.89509,31.20225,giza,Tourist attraction Ancient memorial & temple complex Historic Sites
+221,Al Horreya Garden,06:00 AM, 12:00 AM,3.9,36,Historical landmark,Ancient egypt and ancient history Historic Sites,29.94021,31.15149,giza,Historical landmark Ancient egypt and ancient history Historic Sites
+222,Zamalek Art Gallery,06:00 AM, 12:00 AM,4.5,125,Bazar,Shopping Tours,29.98492,31.14321,giza,Bazar Shopping Tours
+223,Al-Nasser Mohammed Ibn Kalawoun,06:00 AM, 12:00 AM,4.2,"4,063",Garden,Palms & statues in riverside green space Botanical,30.04147,31.22579,cairo,Garden Palms & statues in riverside green space Botanical
+224,El Andalos Park,06:00 AM, 12:00 AM,4.6,270,Art Gallery,Art Galleries,30.06137,31.22296,cairo,Art Gallery Art Galleries
+225,Islamic Ceramics Museum: ,09:00 AM, 4:00 PM,4.7,318,Mosque,Religious Sites,30.02921,31.26087,cairo,Mosque Religious Sites
+226,Al-Roda Nilometer,06:00 AM, 12:00 AM,4.1,810,Park,Moorish-style water feature & statues,30.0442,31.22741,cairo,Park Moorish-style water feature & statues
+227,National Police Museum: ,09:00 AM, 4:00 PM,3.9,64,Museum,Art Museums,30.05717,31.22265,cairo,Museum Art Museums
+228,Karmet Ibn Hanie Cultural Center Ahmed Shawky Museum: ,09:00 AM, 4:00 PM,4.5,572,Historical landmark,,30.00697,31.225,cairo,Historical landmark
+229,Pyramids of Queens,06:00 AM, 12:00 AM,3.9,98,Museum,Speciality Museums,30.03084,31.25992,cairo,Museum Speciality Museums
+230,Safari Park,06:00 AM, 12:00 AM,4.3,164,Museum,,30.02126,31.21743,cairo,Museum
+231,Geographical Association of Egypt: ,09:00 AM, 4:00 PM,4.6,386,Historical landmark,Ancient temples at Giza necropolis,29.97157,31.12799,giza,Historical landmark Ancient temples at Giza necropolis
+232,Abou Seifain Church,06:00 AM, 12:00 AM,4.1,"11,594",Park,"Ferris wheel, pony rides & boating",30.07566,31.19167,giza,"Park Ferris wheel, pony rides & boating"
+233,The Palace Of Arts,06:00 AM, 12:00 AM,4.4,75,Museum,,30.04112,31.23605,cairo,Museum
+234,Jazerat Warraq al eaear,06:00 AM, 12:00 AM,4.7,158,Church,Monastery and architecture Religious Sites,30.01244,31.23075,cairo,Church Monastery and architecture Religious Sites
+235,The Royal Mummies Hall: ,09:00 AM, 4:00 PM,4.5,139,Museum,Art Museums,30.04346,31.2261,cairo,Museum Art Museums
+236,Darb 1718,06:00 AM, 12:00 AM,4.4,111,island,,30.11861,31.22583,cairo,island
+237,Safarkhan Art Gallery,06:00 AM, 12:00 AM,4.7,984,Museum,Ancient Egyptian mummies & coffins,30.00815,31.24826,cairo,Museum Ancient Egyptian mummies & coffins
+238,Ramses Wissa Wassef Art Center:, 9:00 AM , 4:00 PM,4.3,"1,667",Archive,"Live music, yoga classes & craft courses contemporary art and culture center",30.00301,31.23177,cairo,"Archive Live music, yoga classes & craft courses contemporary art and culture center"
+239,Jazerat adh Dhahab,06:00 AM, 12:00 AM,4.3,59,Art Gallery,Art and modern art,30.06052,31.22205,cairo,Art Gallery Art and modern art
+240,Abou Ghorab Temple,06:00 AM, 12:00 AM,4.5,124,Art Gallery,Art and museum,29.96875,31.17596,giza,Art Gallery Art and museum
+241,Foustat Traditional Crafts Center: ,09:00 AM, 4:00 PM,3.9,20,island,,31.20583,30.55333,giza,island
+242,Egypt's Renaissance Statue,06:00 AM, 12:00 AM,4.5,43,Temple,"Temple, ancient egypt, ancient history and architecture historic sites",29.90402,31.19412,giza,"Temple Temple, ancient egypt, ancient history and architecture historic sites"
+243,Sulayman Pasha Mosque,06:00 AM, 12:00 AM,4.4,194,art and museum,Handicraft,30.00637,31.23472,cairo,art and museum Handicraft
+244,Tomb of Queen Khentkawes I,06:00 AM, 12:00 AM,4.4,208,statue,"Renaissance, art and history",30.02833,31.21593,giza,"statue Renaissance, art and history"
+245,Cairo Zoo: ,09:00 AM, 7:00 PM,4.8,40,Mosque,Religious Sites,30.03106,31.26435,cairo,Mosque Religious Sites
+246,Nation's House Museum: ,09:00 AM, 4:00 PM,4.5,48,Historical landmark,Historic sites,29.97335,31.13551,giza,Historical landmark Historic sites
+247,Umm Kulthum Park,06:00 AM, 12:00 AM,3.8,127,Zoo,,30.02212,31.21608,giza,Zoo
+248,Bab El Azab,06:00 AM, 12:00 AM,4.3,220,Museum,,30.03805,31.23746,cairo,Museum
+249,Mausoleum of al-Imam al-Shafi'i,06:00 AM, 12:00 AM,4.1,"1,513",Park,Landscaped green space on the Nile,30.03108,31.22562,cairo,Park Landscaped green space on the Nile
+250,Al Funun Garden,06:00 AM, 12:00 AM,4.4,34,Historical landmark,,30.03106,31.25817,cairo,Historical landmark
+251,Pyramid of Hetepheres I,06:00 AM, 12:00 AM,4.7,177,Historical landmark,,30.0118,31.25806,cairo,Historical landmark
+252,Hollywood Sharm El Sheikh,06:00 AM, 12:00 AM,3.8,"4,727",Garden,Riverside spot dotted with palm trees,30.02281,31.22288,cairo,Garden Riverside spot dotted with palm trees
+253,Soho Square Dancing Fountain,06:00 AM, 12:00 AM,4.5,136,Historical landmark,Remains of an ancient queen's tomb Historic Sites,29.97892,31.13614,giza,Historical landmark Remains of an ancient queen's tomb Historic Sites
+254,Mustafa Mosque,06:00 AM, 12:00 AM,3.9,"4,760",Park,Points of Interest & Landmarks theme,27.86481,34.29848,sharm el sheikh,Park Points of Interest & Landmarks theme
+255,Cleo Park,06:00 AM, 12:00 AM,4.6,"6,446",Tourist attraction,Points of Interest & Landmarks Fountains,27.96281,34.39398,sharm el sheikh,Tourist attraction Points of Interest & Landmarks Fountains
+256,Peace Square,06:00 AM, 12:00 AM,4.7,"3,770",Mosque,Points of Interest & Landmarks Architectural Buildings Religious Sites Churches & Cathedrals,27.89247,34.29964,sharm el sheikh,Mosque Points of Interest & Landmarks Architectural Buildings Religious Sites Churches & Cathedrals
+257,The Heavenly Cathedral,06:00 AM, 12:00 AM,4.1,838,Park,Water Parks,27.9168,34.32298,sharm el sheikh,Park Water Parks
+258,El Sherif Safari,06:00 AM, 12:00 AM,4.5,"1,641",Park,National park,27.96378,34.36132,sharm el sheikh,Park National park
+259,Safari Sharm,06:00 AM, 12:00 AM,4.8,"3,664",Church,Churches & Cathedrals,27.88806,34.29541,sharm el sheikh,Church Churches & Cathedrals
+260,Old market sharm el sheikh,06:00 AM, 12:00 AM,4.2,"2,580",Tourist attraction,"4WD, ATV & Off-Road Tours Boat Tours Water Sports Sightseeing Tours",27.9429,34.31232,sharm el sheikh,"Tourist attraction 4WD, ATV & Off-Road Tours Boat Tours Water Sports Sightseeing Tours"
+261,Wadi Al-Khorom,06:00 AM, 12:00 AM,4.2,"2,852",Tourist attraction,,27.95351,34.28735,sharm el sheikh,Tourist attraction
+262,The monument in Sharm El Sheikh,06:00 AM, 12:00 AM,4.4,"21,874",Cruise agency,Flea & Street Markets,27.86532,34.29579,sharm el sheikh,Cruise agency Flea & Street Markets
+263,The Old Market,06:00 AM, 12:00 AM,4.3,137,Tourist attraction,,27.94279,34.294,sharm el sheikh,Tourist attraction
+264,Royal Sea Scope submarineEgypt SunMarine Fleet,06:00 AM, 12:00 AM,4.5,"1,483",Tourist attraction,,27.84863,34.31634,sharm el sheikh,Tourist attraction
+265,SOHO Square Sharm El Sheikh,06:00 AM, 12:00 AM,4.4,"8,825",Tourist attraction,,27.86556,34.29584,sharm el sheikh,Tourist attraction
+266,Royal Seascope Submarines Hurghada,06:00 AM, 12:00 AM,4.4,"1,359",Tourist attraction,Submarine Tours,27.86192,34.28986,sharm el sheikh,Tourist attraction Submarine Tours
+267,Travelino Club Egypt | Escursioni Sharm el Sheikh Excursions,06:00 AM, 12:00 AM,4.6,"34,810",Shopping mall,Shopping Malls,27.96257,34.39381,sharm el sheikh,Shopping mall Shopping Malls
+268,Pedestrian Rd Neama Bay,06:00 AM, 12:00 AM,4.3,718,Tourist attraction,,27.2579,33.81161,sharm el sheikh,Tourist attraction
+269,Sharm El Sheikh Museum,06:00 AM, 12:00 AM,4.7,117,Travel agency,Cultural Tours Swim with Dolphins Boat Tours Sightseeing Tours Day Trips,27.89521,34.30436,sharm el sheikh,Travel agency Cultural Tours Swim with Dolphins Boat Tours Sightseeing Tours Day Trips
+270,Sahaba Mosque,06:00 AM, 12:00 AM,4.4,"1,314",Tourist attraction,,27.91233,34.32241,sharm el sheikh,Tourist attraction
+271,Ghibli Raceway,06:00 AM, 12:00 AM,4.6,375,Museum,,27.93129,34.3457,sharm el sheikh,Museum
+272,run4peace run4egypt,06:00 AM, 12:00 AM,4.8,"2,569",Mosque,Architectural Buildings Religious Sites,27.86662,34.29524,sharm el sheikh,Mosque Architectural Buildings Religious Sites
+273,sharks bay,06:00 AM, 12:00 AM,4.4,277,Go-kart track,Auto Racing Tracks,27.92197,34.34462,sharm el sheikh,Go-kart track Auto Racing Tracks
+274,Naama Bay,06:00 AM, 12:00 AM,4.4,109,Historical landmark,,27.96437,34.36115,sharm el sheikh,Historical landmark
+275,Oasis safari T,06:00 AM, 12:00 AM,4.6,474,Beach volleyball club,Beaches,27.95158,34.38441,sharm el sheikh,Beach volleyball club Beaches
+276,Dolphina,06:00 AM, 12:00 AM,4.5,"2,389",Water,Bodies of Water Beaches,27.9117,34.33242,sharm el sheikh,Water Bodies of Water Beaches
+277,Safari Assembly,06:00 AM, 12:00 AM,4.1,52,Tourist attraction,,27.94436,34.31273,sharm el sheikh,Tourist attraction
+278,Genena City,06:00 AM, 12:00 AM,4.2,"1,559",Tourist attraction,Amusement & Theme Parks,28.05434,34.42544,sharm el sheikh,Tourist attraction Amusement & Theme Parks
+279,VIVA Beach & Restaurant:,06:00 AM, 12:00 AM,4.2,299,Whale watching tour agency,,27.9382,34.31,sharm el sheikh,Whale watching tour agency
+280,Taj Mahal,06:00 AM, 12:00 AM,4.2,"6,266",Shopping mall,,27.90801,34.31983,sharm el sheikh,Shopping mall
+281,Sharm El Sheikh Night Club,06:00 AM, 12:00 AM,4,"1,088",Beach,public,27.90943,34.32666,sharm el sheikh,Beach public
+282,Ras Mohamed Nature Reserve: ,06:00 AM, 6:00 PM,3.8,115,Night club,Dance Clubs & Discos,27.85914,34.31148,sharm el sheikh,Night club Dance Clubs & Discos
+283,Rixos Beach: ,10:00 AM, 6:00 PM,4.8,87,Tourist attraction,,27.79468,34.21189,sharm el sheikh,Tourist attraction
+284,La Strada Mall: ,10:00 AM, 12:00 AM,4.8,"1,578",Tourist attraction,,27.74988,34.23844,sharm el sheikh,Tourist attraction
+285,Fun & Sun Managed by Rixos Premium,06:00 AM, 12:00 AM,4.8,990,Beach,public,28.02937,34.4421,sharm el sheikh,Beach public
+286,Luxor Museum: ,09:00 AM, 4:00 PM,3.9,208,Shopping mall,,28.04281,34.42925,sharm el sheikh,Shopping mall
+287,Luxor Temple:, 6:00 AM , 10:00 PM,4.8,556,Park,,28.03595,34.42711,sharm el sheikh,Park
+288,Karnak: ,06:00 AM, 5:30 PM,4.7,"4,784",Museum,History Museums,25.70761,32.64455,luxor,Museum History Museums
+289,Mummification Museum: ,09:00 AM, 5:00 PM,4.8,"20,901",Archaeological site,Ancient Ruins Monuments & Statues,25.6995,32.63905,luxor,Archaeological site Ancient Ruins Monuments & Statues
+290,Ramesseum: ,09:00 AM, 5:00 PM,4.8,"19,205",Historical landmark,Historic Sites Ancient Ruins,25.71883,32.65727,luxor,Historical landmark Historic Sites Ancient Ruins
+291,Avenue of the Rams,06:00 AM, 5:00 PM,4.4,584,Museum,Speciality Museums Archaeological,25.70232,32.63985,luxor,Museum Speciality Museums Archaeological
+292,Medinet Habu: ,06:00 AM, 5:00 PM,4.7,493,Historical landmark,Ancient Ruins,25.728,32.61046,luxor,Historical landmark Ancient Ruins
+293,First Pylon Luxor Temple: ,06:00 AM, 5:00 PM,4.8,243,Historical landmark,Ancient Ruins Historic Walking Areas,25.7195,32.6562,luxor,Historical landmark Ancient Ruins Historic Walking Areas
+294,Colossi of Memnon: ,06:00 AM, 5:00 PM,4.8,"3,256",Historical landmark,Ancient Ruins,25.71933,32.60134,luxor,Historical landmark Ancient Ruins
+295,Karnak Open-air Museum:, 6:00 AM , 5:30 PM,4.5,24,Historical landmark,,25.7003,32.63967,luxor,Historical landmark
+296,Valley of the Kings:, 6:00 AM , 5:00 PM,4.6,"5,761",Historical landmark,Ancient Ruins Monuments & Statues,25.72146,32.60832,luxor,Historical landmark Ancient Ruins Monuments & Statues
+297,Avenue of Sphinxes,06:00 AM, 12:00 AM,4.9,31,Historical landmark,History Museums,25.72043,32.65748,luxor,Historical landmark History Museums
+298,Banana Island,06:00 AM, 12:00 AM,4.8,"10,872",Archaeological site,,25.74016,32.60141,luxor,Archaeological site
+299,Abou al-Haggag Mosque: ,07:00 AM, 10:00 PM,4.9,65,Historical landmark,,25.70102,32.64053,luxor,Historical landmark
+300,Valley of the Queens: ,06:00 AM, 5:00 PM,4,"2,298",Park,Islands,25.6836,32.62284,luxor,Park Islands
+301,"Magic Horizon Balloons, Luxor",06:00 AM, 12:00 AM,4.7,"1,352",Mosque,,25.69987,32.63977,luxor,Mosque
+302,Ramesses III Temple:, 6:00 AM , 5:00 PM,4.6,"1,283",Historical landmark,Ancient Ruins Cemeteries,25.72858,32.59292,luxor,Historical landmark Ancient Ruins Cemeteries
+303,Mut Temple:, 6:00 AM , 5:00 PM,4.6,248,Balloon ride tour agency,Balloon Rides,25.68801,32.6324,luxor,Balloon ride tour agency Balloon Rides
+304,Precinct of Amun-Re: ,06:00 AM, 5:30 PM,4.8,156,Historical landmark,Ancient Ruins,25.7183,32.65698,luxor,Historical landmark Ancient Ruins
+305,Tombs of the Nobles:, 6:00 AM , 5:00 PM,4.4,371,Historical landmark,Historic Sites Ancient Ruins Religious Sites Monuments & Statues,25.71166,32.65521,luxor,Historical landmark Historic Sites Ancient Ruins Religious Sites Monuments & Statues
+306,Sound & Light:, 7:00 PM , 8:00 PM,4.8,263,Place of worship,,25.7178,32.65803,luxor,Place of worship
+307,Mortuary Temple of Seti I: ,06:00 AM, 5:00 PM,4.6,281,Historical landmark,Ancient Ruins Cemeteries,25.73141,32.59702,luxor,Historical landmark Ancient Ruins Cemeteries
+308,Deir el-Medina,06:00 AM, 12:00 AM,4.5,718,Historical landmark,Theatre & Performances,25.72066,32.65337,luxor,Historical landmark Theatre & Performances
+309,Hypostyle Hall: ,06:00 AM, 5:30 PM,4.6,674,Historical landmark,Ancient Ruins,25.73267,32.62816,luxor,Historical landmark Ancient Ruins
+310,Temple Of Khonsu: ,06:00 AM, 5:30 PM,4.7,501,Historical landmark,Historic Sites Ancient Ruins,25.7281,32.60144,luxor,Historical landmark Historic Sites Ancient Ruins
+311,Mortuary Temple of Hatshepsut: ,06:00 AM, 5:00 PM,4.9,143,Historical landmark,,25.71866,32.65782,luxor,Historical landmark
+312,Deir el-Bahari:, 6:00 AM , 5:00 PM,4.7,70,Historical landmark,Historic Sites Ancient Ruins,25.7166,32.65578,luxor,Historical landmark Historic Sites Ancient Ruins
+313,Temple of Thutmose III:, 6:00 AM , 5:00 PM,4.7,"14,029",Tourist attraction,Historic Sites Ancient Ruins Monuments & Statues,25.73828,32.60649,luxor,Tourist attraction Historic Sites Ancient Ruins Monuments & Statues
+314,Mortuary Temple of Amenhotep III:, 6:00 AM , 5:00 PM,4.7,417,Historical landmark,Ancient Ruins Monuments & Statues,25.73726,32.60773,luxor,Historical landmark Ancient Ruins Monuments & Statues
+315,Luxorstables Nobi Arabian Horse Stables: ,07:00 AM, 6:00 PM,4.8,159,Historical landmark,,25.71786,32.65956,luxor,Historical landmark
+316,Luxor Fruit and Vegetable Market:, 6:00 AM , 6:00 PM,4.6,"6,294",Historical landmark,,25.72143,32.60907,luxor,Historical landmark
+317,King Tut Balloons,06:00 AM, 12:00 AM,4.6,69,Horseback riding service,Nature & Wildlife Tours Horseback Riding Tours,25.70787,32.63139,luxor,Horseback riding service Nature & Wildlife Tours Horseback Riding Tours
+318,First Pylon,06:00 AM, 12:00 AM,4,972,Fruit and vegetable store,Flea & Street Markets Farmers Markets,25.69786,32.64615,luxor,Fruit and vegetable store Flea & Street Markets Farmers Markets
+319,Wadi El Rayan Fayoum Fall,06:00 AM, 12:00 AM,4.8,29,Balloon ride tour agency,Balloon Rides Private Tours,25.68327,32.63386,luxor,Balloon ride tour agency Balloon Rides Private Tours
+320,Fayoum Oasis,06:00 AM, 12:00 AM,4.8,68,Historical landmark,,25.7193,32.65692,luxor,Historical landmark
+321,The Pyramid of Sneferu,06:00 AM, 12:00 AM,4.3,1611,Waterfalls,Waterfalls,29.19089,30.40119,fayoum,Waterfalls Waterfalls
+322,Waterwheels in Al Faiyum,06:00 AM, 12:00 AM,4,76,Oasis,City Tours Cultural Tours Climbing Tours Day Trips,29.45361,30.58083,fayoum,Oasis City Tours Cultural Tours Climbing Tours Day Trips
+323,Pyramids of El Fayoum,06:00 AM, 12:00 AM,4.5,14,Points of Interest & Landmarks,,29.80859,31.20661,fayoum,Points of Interest & Landmarks
+324,Fayoum Art Center,06:00 AM, 12:00 AM,3.5,25,Points of Interest & Landmarks,Points of Interest & Landmarks,29.45361,30.58083,fayoum,Points of Interest & Landmarks Points of Interest & Landmarks
+325,Karanis,06:00 AM, 12:00 AM,4.5,3,Monuments & Statues,Monuments & Statues,29.3084,30.84285,fayoum,Monuments & Statues Monuments & Statues
+326,Kom Aushim Museum,06:00 AM, 12:00 AM,4,8,Art Gallery,Art Galleries Art Museums,29.39912,30.48959,fayoum,Art Gallery Art Galleries Art Museums
+327,Al Sultan Qaitbay Mosque,06:00 AM, 12:00 AM,4,9,Ancient Ruins,Ancient Ruins,29.51873,30.90329,fayoum,Ancient Ruins Ancient Ruins
+328,Qasr Qaroun Temple,06:00 AM, 12:00 AM,4.1,120,Museum,History Musems,29.51857,30.8978,fayoum,Museum History Musems
+329,Magic lake camp,06:00 AM, 12:00 AM,4.7,268,Mosque,,30.04749,31.26004,fayoum,Mosque
+330,Citadel of Qaitbay:, 9:00 AM , 5:00 PM,4.2,468,Historical landmark,,29.40568,30.41832,fayoum,Historical landmark
+331,Montaza Palace: ,09:00 AM, 4:00 PM,4.4,58,Campground,,29.16149,30.34093,fayoum,Campground
+332,Bibliotheca Alexandrina: ,10:00 AM, 7:00 PM,4.4,37071,Fortress,15th-century fortress & naval museum,31.21401,29.88564,alexandria,Fortress 15th-century fortress & naval museum
+333,Serapeum of Alexandria,06:00 AM, 12:00 AM,4.5,15723,Palace,1932 ornate palace & extensive gardens,31.2885,30.01597,alexandria,Palace 1932 ornate palace & extensive gardens
+334,Sidi Morsi Abu al-Abbas Mosque,06:00 AM, 12:00 AM,4.6,6221,Library,Landmark contemporary library complex,31.20887,29.9092,alexandria,Library Landmark contemporary library complex
+335,Catacombs of Kom el Shoqafa: ,09:00 AM, 4:00 PM,4.3,6206,Temple,Iconic Roman-era granite column,31.18259,29.89627,alexandria,Temple Iconic Roman-era granite column
+336,Alexandria National Museum:, 9:00 AM , 4:00 PM,4.6,2753,Mosque,"Large, architecturally notable mosque Religious Sites",31.20554,29.8823,alexandria,"Mosque Large, architecturally notable mosque Religious Sites"
+337,Royal Jewelry Museum,06:00 AM, 12:00 AM,4.5,3187,archaeological site,Burial chambers from the 2nd century,31.17874,29.89307,alexandria,archaeological site Burial chambers from the 2nd century
+338,Ancient Roman Theatre,06:00 AM, 12:00 AM,4.4,2185,Museum,Egyptian history in an Italianate palace,31.20074,29.9132,alexandria,Museum Egyptian history in an Italianate palace
+339,Stanley Bridge,06:00 AM, 12:00 AM,4.6,6247,Museum,Collections from Muhammad Ali dynasty,31.24061,29.96328,alexandria,Museum Collections from Muhammad Ali dynasty
+340,Cavafy Museum,06:00 AM, 12:00 AM,4.4,4894,Theatre,Ruins of a Roman theater & villa,31.19488,29.90404,alexandria,Theatre Ruins of a Roman theater & villa
+341,El Mamurah Beach,06:00 AM, 12:00 AM,4.6,31926,Bridge,Landmark Arab-style bay crossing,31.23523,29.94864,alexandria,Bridge Landmark Arab-style bay crossing
+342,Mahmoud Said Museum,06:00 AM, 12:00 AM,4.3,553,Museum,Former home of a well-known Greek poet,31.19759,29.90124,alexandria,Museum Former home of a well-known Greek poet
+343,The Cathedral of St. Mark,06:00 AM, 12:00 AM,4.2,12013,Beach,Lively spot with cafes & a promenade,31.29082,30.03067,alexandria,Beach Lively spot with cafes & a promenade
+344,Greco-Roman Museum:, 9:00 AM , 4:00 PM,4.5,193,Museum,,31.24439,29.96901,alexandria,Museum
+345,Alexandria Naval Unknown Soldier Memorial,06:00 AM, 12:00 AM,4.8,2765,Church,Iconic Coptic church on an ancient site Religious Sites,31.19838,29.89957,alexandria,Church Iconic Coptic church on an ancient site Religious Sites
+346,Corniche Alexandria,06:00 AM, 12:00 AM,3.9,459,Museum,HIstory Mummies & other archaeological objects,31.19918,29.9066,alexandria,Museum HIstory Mummies & other archaeological objects
+347,Al Qaaed Ibrahim Basha Mosque,06:00 AM, 12:00 AM,4.3,14254,Monument,,31.2,29.89376,alexandria,Monument
+348,El Montazah Park,06:00 AM, 12:00 AM,4.6,403,Waterfront promenade,dating from 1870,31.20974,29.90762,alexandria,Waterfront promenade dating from 1870
+349,Kom el Dikka,07:00 AM, 12:00 AM,4.7,3559,Mosque,Religious Sites,31.20314,29.90384,alexandria,Mosque Religious Sites
+350,Elmontaza Garden,06:00 AM, 12:00 AM,4.1,98,Park,,31.28501,30.02591,alexandria,Park
+351,El Nabi Daniel Mosque,06:00 AM, 12:00 AM,4.3,125,archaeological site,,31.1975,29.909,alexandria,archaeological site
+352,Alexandria Corniche,06:00 AM, 12:00 AM,4.5,3171,Garden,Palace grounds with flowerbeds & beaches,31.28395,30.01621,alexandria,Garden Palace grounds with flowerbeds & beaches
+353,Mohamed Ali Pasha Statue,06:00 AM, 12:00 AM,4.5,1699,Mosque,Religious Sites,31.19492,29.90234,alexandria,Mosque Religious Sites
+354,Montazah Beach,06:00 AM, 12:00 AM,4.6,1552,Beach,,31.20959,29.90763,alexandria,Beach
+355,St. Takla Church,06:00 AM, 12:00 AM,4.3,3371,Statue,,31.19738,29.89287,alexandria,Statue
+356,Alexandria Aquarium,06:00 AM, 12:00 AM,4.6,743,Beach,,31.29303,30.02034,alexandria,Beach
+357,Museum of Fine Arts,06:00 AM, 12:00 AM,4.4,810,Church,church and christianity Historic sites,31.21073,29.92628,alexandria,Church church and christianity Historic sites
+358,Saint Catherine Cathedral,06:00 AM, 12:00 AM,4.2,1237,Aquarium,museum & research center,31.21283,29.885,alexandria,Aquarium museum & research center
+359,Sir. Allenby Garden,06:00 AM, 12:00 AM,4.4,417,Museum,Art Museum,31.19535,29.91344,alexandria,Museum Art Museum
+360,Planetarium Science Center (PSC),06:00 AM, 12:00 AM,4.6,521,Church,"Cathedral, architecture, church and history Religious Sites",31.19471,29.89452,alexandria,"Church Cathedral, architecture, church and history Religious Sites"
+361,Elharamlik Palace,06:00 AM, 12:00 AM,4.4,800,Garden,park,31.22521,29.95544,alexandria,Garden park
+362,Tea island,06:00 AM, 12:00 AM,4.6,276,Planetarium,Space & IMAX movies in a dome theater,31.20898,29.90814,alexandria,Planetarium Space & IMAX movies in a dome theater
+363,Princess Aziza Fahmy's Palace,06:00 AM, 12:00 AM,4.5,179,Palace,,31.28852,30.01638,alexandria,Palace
+364,Montazah Aida Beach,06:00 AM, 12:00 AM,4.4,406,island,,31.29205,30.02116,alexandria,island
+365,El Attarine mosque,06:00 AM, 12:00 AM,4.3,557,History,,31.24201,29.96137,alexandria,History
+366,An+niades Palace,06:00 AM, 12:00 AM,4.5,190,Beach,,30.83516,29.23321,alexandria,Beach
+367,Tolip Beach,06:00 AM, 12:00 AM,4.6,143,Mosque,Religious Sites,31.19521,29.89899,alexandria,Mosque Religious Sites
+368,Sky Yacht Club,06:00 AM, 12:00 AM,4.1,395,Palace,History,31.20228,29.95073,alexandria,Palace History
+369,kouta park,06:00 AM, 12:00 AM,4,1866,Beach,,31.24317,29.9615,alexandria,Beach
+370,Stanli Beach,06:00 AM, 12:00 AM,4.2,471,Beach,,31.28979,30.0247,alexandria,Beach
+371,Ras Soda Temple,06:00 AM, 12:00 AM,4,5907,Park,,31.28468,30.03403,alexandria,Park
+372,Mustafa Kamel Hellenistic Necropolis,06:00 AM, 12:00 AM,4.3,511,Beach,,31.23389,29.94583,alexandria,Beach
+373,Glime Beach,06:00 AM, 12:00 AM,4.1,126,Temple,,31.20324,29.91876,alexandria,Temple
+374,Arabic Calligraphy Museum,06:00 AM, 12:00 AM,4.2,53,History,,31.23074,29.9476,alexandria,History
+375,Cleopatra Beach,06:00 AM, 12:00 AM,3.7,906,Beach,,31.24112,29.95946,alexandria,Beach
+376,Eliahu Hanavi Synagogue,06:00 AM, 12:00 AM,4.2,36,Museum,,31.19509,29.9131,alexandria,Museum
+377,San Stifanu Beach,06:00 AM, 12:00 AM,4,37,Beach,,36.55333,31.97284,alexandria,Beach
+378,Sh??i' al Anf?sh?,06:00 AM, 12:00 AM,3.9,148,Synagogue,"judaism, history and architecture Religious Sites",31.19921,29.90037,alexandria,"Synagogue judaism, history and architecture Religious Sites"
+379,Magic Planet City Centre Alexandria,06:00 AM, 12:00 AM,4.3,30,Beach,,31.24806,29.96528,alexandria,Beach
+380,Keluobatra Beath,06:00 AM, 12:00 AM,4.3,116,Beach,,31.20885,29.88262,alexandria,Beach
+381,El Montazah Beach,06:00 AM, 12:00 AM,4.4,183,Park,Amusment Park theme,31.16591,29.93252,alexandria,Park Amusment Park theme
+382,An+niades Garden's,06:00 AM, 12:00 AM,4.4,128,Beach,,36.55333,31.97284,alexandria,Beach
+383,San Dtephano Beach,06:00 AM, 12:00 AM,4.3,130,Beach,,31.28234,30.0116,alexandria,Beach
+384,Al Ibrahimiyyah Beach,06:00 AM, 12:00 AM,3.9,2041,Garden,Green space with palms & sculptures,31.20568,29.947,alexandria,Garden Green space with palms & sculptures
+385,Stanley Beach,06:00 AM, 12:00 AM,4.4,35,Beach,,31.24416,29.96297,alexandria,Beach
+386,Taverna Aqua City,06:00 AM, 12:00 AM,4.3,19,Beach,,31.21722,29.92417,alexandria,Beach
+387,National Maritime Museum,06:00 AM, 12:00 AM,4.2,38,Beach,,31.23399,29.94585,alexandria,Beach
+388,El Nozha Park,06:00 AM, 12:00 AM,3.9,14,Park,Garden,31.2448,30.00169,alexandria,Park Garden
+389,Teachers' Club Beach,06:00 AM, 12:00 AM,3.8,77,Museum,Marine,31.23646,29.95113,alexandria,Museum Marine
+390,Al Shalalat Park,06:00 AM, 12:00 AM,3.8,199,Park,Garden,31.20304,29.94382,alexandria,Park Garden
+391,El Alamein War Cemetery British,06:00 AM, 12:00 AM,3.6,70,Beach,,31.23133,29.94358,alexandria,Beach
+392,Beach Hotel Rose Asafra,06:00 AM, 12:00 AM,3.8,4503,Park,Palm-lined footpaths & city wall ruins,31.20269,29.91454,alexandria,Park Palm-lined footpaths & city wall ruins
+393,International park Alexandria,06:00 AM, 12:00 AM,4.5,68,Military cemetery,,30.83721,28.94672,alexandria,Military cemetery
+394,Nelson's Island,06:00 AM, 12:00 AM,3.8,2969,Beach,"Swimming, seafront cafes & sunset views public",31.27545,30.00198,alexandria,"Beach Swimming, seafront cafes & sunset views public"
+395,Honey Moon Beach,06:00 AM, 12:00 AM,3.7,720,Park,Garden,31.17848,29.93029,alexandria,Park Garden
+396,Elbeytash Beach,06:00 AM, 12:00 AM,4.3,95,island,,31.35783,30.10588,alexandria,island
+397,Abu Qir Bay,06:00 AM, 12:00 AM,4.3,247,Beach,,31.13698,29.7816,alexandria,Beach
+398,Alexandria Zoo,06:00 AM, 12:00 AM,4,128,Beach,,31.13241,29.77865,alexandria,Beach
+399,Hurghada Grand Aquarium:, 9:00 AM , 5:00 PM,4.6,26,Bay,"Ancient history, ruins, archaeological excavation and ancient egypt",31.3,30.16667,alexandria,"Bay Ancient history, ruins, archaeological excavation and ancient egypt"
+400,Mini Egypt Park,06:00 AM, 12:00 AM,3.6,11603,Zoo,"Lions, reptiles & a variety of birds",31.20485,29.94356,alexandria,"Zoo Lions, reptiles & a variety of birds"
+401,Sand City Hurghada,09:00 AM, 6:00 PM,4.3,"7,948",Tourist attraction,,27.1344,33.82188,hurghada,Tourist attraction
+402,ALmamsha park,06:00 AM, 12:00 AM,4.4,990,Tourist attraction,Speciality Museums Points of Interest & Landmarks,26.98762,33.85627,hurghada,Tourist attraction Speciality Museums Points of Interest & Landmarks
+403,Hurghada Marine Museum & Aquarium,06:00 AM, 12:00 AM,4.3,"2,069",Tourist attraction,,27.09959,33.82309,hurghada,Tourist attraction
+404,"Sliders Cable Park El Gouna, Egypt",06:00 AM, 12:00 AM,4.3,"2,486",Tourist attraction,,27.19021,33.83248,hurghada,Tourist attraction
+405,Monument + the martyrs of the Battle of Shidwan Island,07:00 AM, 12:00 AM,4.3,155,Tourist attraction,,27.28363,33.77222,hurghada,Tourist attraction
+406,Makadi Water World,06:00 AM, 12:00 AM,4.5,779,Tourist attraction,water park,27.37727,33.66082,hurghada,Tourist attraction water park
+407,Hurghada Museum:, 9:00 AM , 3:00 PM,4.4,163,Park,memorial park,27.50523,33.98209,hurghada,Park memorial park
+408,Senzo Mall: ,10:00 AM, 12:00 AM,4.6,36,Park,water park,26.9825,33.87289,hurghada,Park water park
+409,Steg Pharao Azur Resort,06:00 AM, 12:00 AM,4.4,678,Museum,,27.16055,33.82146,hurghada,Museum
+410,ponorka Sindbad,06:00 AM, 12:00 AM,4.4,"19,324",Shopping mall,Shopping mall,27.09554,33.82191,hurghada,Shopping mall Shopping mall
+411,Forest Tree,06:00 AM, 12:00 AM,4.2,23,Tourist attraction,,27.08721,33.84795,hurghada,Tourist attraction
+412,Sindbad Aqua Park,06:00 AM, 12:00 AM,4.4,47,Tourist attraction,,27.17321,33.85306,hurghada,Tourist attraction
+413,Paradise Beach,06:00 AM, 12:00 AM,4,33,National forest,,27.30771,33.71985,hurghada,National forest
+414,Orange Bay,06:00 AM, 12:00 AM,4.5,31,Park,water,27.19021,33.83248,hurghada,Park water
+415,Submarine adventures Hurghada:, 7:00 AM , 6:00 PM,4.5,"5,909",Tourist attraction,Beaches,27.18144,33.95392,hurghada,Tourist attraction Beaches
+416,Sherry.St,06:00 AM, 12:00 AM,4.4,"7,488",Tourist attraction,Parasailing & Paragliding Safaris Adrenaline & Extreme Tours Swim with Dolphins Boat Tours Waterskiing & Jetskiing Fishing Charters & Tours Speed Boats Tours Day Trips,27.20837,33.92651,hurghada,Tourist attraction Parasailing & Paragliding Safaris Adrenaline & Extreme Tours Swim with Dolphins Boat Tours Waterskiing & Jetskiing Fishing Charters & Tours Speed Boats Tours Day Trips
+417,Sindbad Submarines,06:00 AM, 12:00 AM,4.5,"11,127",Boat tour agency,,27.22391,33.84094,hurghada,Boat tour agency
+418,Davinci Beach: , 9:00 AM , 5:00 PM,4.3,"2,598",Park,,27.22024,33.83601,hurghada,Park
+419,Ramashka Tours Hurghada Bus Tours Boat Trips: , 9:00 AM , 5:00 PM,4.5,786,Boat tour agency,Submarine Tours,27.18702,33.83493,hurghada,Boat tour agency Submarine Tours
+420,Funnydivers Diving Center Hurghada Egypt: , 9:00 AM , 5:00 PM,4.6,14,Recreation center,,27.2579,33.81161,hurghada,Recreation center
+421,Dive UK Hurghada: , 9:00 AM , 5:00 PM,4.7,126,Sightseeing tour agency,Scuba & Snorkelling Swim with Dolphins Boat Tours Sightseeing Tours Private Tours,27.22617,33.83806,hurghada,Sightseeing tour agency Scuba & Snorkelling Swim with Dolphins Boat Tours Sightseeing Tours Private Tours
+422,Bullet Speedboats: , 9:00 AM , 5:00 PM,5,30,Hiking area,"Scuba & Snorkelling Submarine Tours Historical & Heritage Tours Boat Tours Private Tours Bus Tours 4WD, ATV & Off-Road Tours Safaris Taxis & Shuttles Walking Tours Fishing Charters & Tours Gear Rentals Dolphin & Whale Watching Day Trips",27.2579,33.81161,hurghada,"Hiking area Scuba & Snorkelling Submarine Tours Historical & Heritage Tours Boat Tours Private Tours Bus Tours 4WD, ATV & Off-Road Tours Safaris Taxis & Shuttles Walking Tours Fishing Charters & Tours Gear Rentals Dolphin & Whale Watching Day Trips"
+423,Desert Safari Hurghada: , 9:00 AM , 5:00 PM,5,"1,687",SCUBA tour agency,Scuba & Snorkelling,27.25884,33.81948,hurghada,SCUBA tour agency Scuba & Snorkelling
+424,Crazy Dolphin Diving Center: , 9:00 AM , 5:00 PM,5,153,Diving center,Sports Camps & Clinics Scuba & Snorkelling Adrenaline & Extreme Tours Taxis & Shuttles Boat Tours Private Tours Dolphin & Whale Watching Day Trips,27.22619,33.84105,hurghada,Diving center Sports Camps & Clinics Scuba & Snorkelling Adrenaline & Extreme Tours Taxis & Shuttles Boat Tours Private Tours Dolphin & Whale Watching Day Trips
+425,ALFayrouz beach: ,06:00 AM, 12:00 AM,5,64,Boat rental service,Scuba & Snorkelling Swim with Dolphins Boat Tours Private Tours Dolphin & Whale Watching Speed Boats Tours Day Trips,27.22446,33.84114,hurghada,Boat rental service Scuba & Snorkelling Swim with Dolphins Boat Tours Private Tours Dolphin & Whale Watching Speed Boats Tours Day Trips
+426,Akhenaten Egypt Gallery: , 10:00 AM , 10:00 PM,4.3,164,Sightseeing tour agency,,27.13288,33.78073,hurghada,Sightseeing tour agency
+427,Dive Hurghada: , 9:00 AM , 5:00 PM,4.7,139,SCUBA instructor,Scuba & Snorkelling Boat Tours,27.24776,33.84759,hurghada,SCUBA instructor Scuba & Snorkelling Boat Tours
+428,Mahmya Island: , 9:00 AM , 5:00 PM,3.8,180,Beach,public,27.21799,33.84178,hurghada,Beach public
+429,"Cleopatra Bazar Shera+n road, Hurghada: ", 9:00 AM , 10:00 PM,2.5,30,Art Gallery,Art Galleries,27.18854,33.82209,hurghada,Art Gallery Art Galleries
+430,Egypt Divers: , 9:00 AM , 5:00 PM,4.8,330,SCUBA instructor,Scuba & Snorkelling Shark Diving Safaris Boat Tours Water Sports,27.198,33.8429,hurghada,SCUBA instructor Scuba & Snorkelling Shark Diving Safaris Boat Tours Water Sports
+,,,,,,,,,,,
