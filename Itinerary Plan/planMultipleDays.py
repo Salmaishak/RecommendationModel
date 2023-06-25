@@ -135,7 +135,7 @@ def plan(city, starting_point, days, start_time, end_time, visited_res, visited_
 
     itinerary = []
 
-    restaurants = [r for r in data["restaurants"] if r["city"] == city]
+    restaurants = [r for r in data["restaurants"] if r["city"] == str.capitalize(city)]
     attractions = [a for a in data["attractions"] if a["city"] == city]
 
     current_location = starting_point
@@ -146,8 +146,8 @@ def plan(city, starting_point, days, start_time, end_time, visited_res, visited_
         min_distance = math.inf
         for place in places:
             # Calculate lat/long difference in radians
-            lat1, lon1 = math.radians(place["location"][0]), math.radians(place["location"][1])
-            lat2, lon2 = math.radians(location[0]), math.radians(location[1])
+            lat1, lon1 = math.radians(float(place["location"][0])), math.radians(float(place["location"][1]))
+            lat2, lon2 = math.radians(float(location[0])), math.radians(float(location[1]))
 
             dlat = lat2 - lat1
             dlon = lon2 - lon1
@@ -173,8 +173,8 @@ def plan(city, starting_point, days, start_time, end_time, visited_res, visited_
 
     def get_distance(location1, location2):
         # Calculate lat/long difference in radians
-        lat1, lon1 = math.radians(location1[0]), math.radians(location1[1])
-        lat2, lon2 = math.radians(location2[0]), math.radians(location2[1])
+        lat1, lon1 = math.radians(float(location1[0])), math.radians(float (location1[1]))
+        lat2, lon2 = math.radians(float(location2[0])), math.radians(float(location2[1]))
 
         dlat = lat2 - lat1
         dlon = lon2 - lon1
@@ -258,5 +258,5 @@ def planmultipledays(days,city,location,no,start_time,end_time,visited_res,visit
         print(itiner2)
         i= i +1
 
-planmultipledays(2,"cairo", (30.0444, 31.2357), 1, "8AM", "4PM", visited_res, visited__attr)
+planmultipledays(4,"cairo", (30.0444, 31.2357), 1, "8AM", "8PM", visited_res, visited__attr)
 
