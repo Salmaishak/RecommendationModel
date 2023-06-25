@@ -98,10 +98,11 @@ def recommendationsRestPlan(model, userID, rest, city, times):
     recommendations = nrecommendations.join(rest, on='restID').select('userID', 'restID', 'name', 'ratings', 'longitude', 'latitude', 'city')
 
     joinedtoTimes= recommendations.join(selectTime, on='restID', how='inner')
+    filtered = joinedtoTimes.filter((joinedtoTimes.userID == userID) & (joinedtoTimes.city == city))
 
-    joinedtoTimes.show()
+    filtered.show()
 
-    return joinedtoTimes
+    return filtered
     # nrecommendations.join(rest, on='restID').select('userID', 'restID', 'name', 'ratings', 'longitude', 'latitude',
     #                                                 'city') \
     #     .filter(col('userID') == userID).filter(col('city') == city).orderBy(col('ratings').desc()).show()

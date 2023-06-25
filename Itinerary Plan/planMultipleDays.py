@@ -17,6 +17,8 @@ from datetime import datetime
 
 from datetime import datetime
 
+from formatRecForPlan import formatRecommendations
+
 
 def is_open(open_time, close_time, check_time):
     """Check if check_time is between open_time and close_time"""
@@ -108,52 +110,7 @@ is_time_after('12AM', '1AM')
 is_time_after('12AM', '11PM')
 
 # False
-data = {
-    "restaurants": [
-        {"name": "Koshary Abou Tarek", "location": (30.0444, 31.2357), "opening_time": "10AM", "closing_time": "12AM",
-         "city": "cairo"},
-        {"name": "Felfela", "location": (30.0479, 31.2336), "opening_time": "8AM", "closing_time": "12AM",
-         "city": "cairo"},
-        {"name": "Abou El Sid", "location": (30.0521, 31.3415), "opening_time": "12PM", "closing_time": "12AM",
-         "city": "cairo"},
-        {"name": "Taboula", "location": (30.0580, 31.3417), "opening_time": "12PM", "closing_time": "1AM",
-         "city": "cairo"},
-        {"name": "Osmanly", "location": (30.0500, 31.3473), "opening_time": "12PM", "closing_time": "12AM",
-         "city": "cairo"},
-        {"name": "Nile Pharaohs Cruising Restaurant", "location": (30.0745, 31.2408), "opening_time": "12PM",
-         "closing_time": "11PM", "city": "cairo"},
-        {"name": "Kadoura", "location": (30.0505, 31.2390), "opening_time": "1PM", "closing_time": "12AM",
-         "city": "cairo"},
-        {"name": "La Palmeraie", "location": (30.0128, 31.2062), "opening_time": "12PM", "closing_time": "12AM",
-         "city": "cairo"},
-        {"name": "Le Pacha 1901", "location": (30.0442, 31.2334), "opening_time": "12PM", "closing_time": "2AM",
-         "city": "cairo"},
-        {"name": "Andrea El Mariouteya", "location": (29.9782, 31.1685), "opening_time": "12PM", "closing_time": "1AM",
-         "city": "cairo"}
-    ],
-    "attractions": [
-        {"name": "Pyramids of Giza", "location": (29.9792, 31.1342), "opening_time": "8AM", "closing_time": "5PM",
-         "city": "cairo"},
-        {"name": "Egyptian Museum", "location": (30.0478, 31.2336), "opening_time": "9AM", "closing_time": "5PM",
-         "city": "cairo"},
-        {"name": "Khan el-Khalili", "location": (30.0450, 31.2625), "opening_time": "9AM", "closing_time": "11PM",
-         "city": "cairo"},
-        {"name": "Cairo Tower", "location": (30.0458, 31.2245), "opening_time": "9AM", "closing_time": "12AM",
-         "city": "cairo"},
-        {"name": "Al-Azhar Park", "location": (30.0463, 31.2599), "opening_time": "8AM", "closing_time": "11PM",
-         "city": "cairo"},
-        {"name": "Salah El-Din Citadel", "location": (30.0293, 31.2612), "opening_time": "9AM", "closing_time": "5PM",
-         "city": "cairo"},
-        {"name": "The Hanging Church", "location": (30.0100, 31.2300), "opening_time": "9AM", "closing_time": "4PM",
-         "city": "cairo"},
-        {"name": "Coptic Museum", "location": (30.0086, 31.2256), "opening_time": "9AM", "closing_time": "4PM",
-         "city": "cairo"},
-        {"name": "Sultan Hassan Mosque", "location": (30.0322, 31.2459), "opening_time": "9AM", "closing_time": "5PM",
-         "city": "cairo"},
-        {"name": "Muizz Street", "location": (30.0057, 31.2454), "opening_time": "9AM", "closing_time": "10PM",
-         "city": "cairo"}
-    ]
-}
+data = formatRecommendations('Cairo', 1)
 
 breakfast_start = "8AM"
 breakfast_end = "12AM"

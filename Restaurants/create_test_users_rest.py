@@ -13,7 +13,7 @@ def intersection(lst1, lst2, total_num):
 
 
 def user_profile_rest(userID):
-    allRestaurants = pd.read_csv('Cairo_Final_Clean_Updated.csv', encoding='latin-1')
+    allRestaurants = pd.read_csv('Allrestaurants2.csv', encoding='latin-1')
 
     cuisine_types = {1: 'Mediterranean', 2: 'Egyptian', 3: 'Italian', 4: 'Seafood', 5: 'Middle Eastern', 6: 'European',
                      7: 'American', 8: 'Vegetarian Friendly', 9: 'Lebanese', 10: 'Barbecue', 11: 'Japanese',

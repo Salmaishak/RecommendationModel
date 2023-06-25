@@ -7,10 +7,10 @@ from attractions_reccommendation import rbm
 from datetime import datetime
 
 def getRecommendationForPlanRest (userID, City):
-    csvRestInfo = "Restaurants/Cairo_Final_Clean_Updated.csv"
-    timesCsv = "Restaurants/Allrestaurants3.csv"
+    csvRestInfo = r"D:\GP\RecommendationModel\Restaurants\Allrestaurants2.csv"
+    timesCsv = r"D:\GP\RecommendationModel\Restaurants\Allrestaurants3.csv"
     timesSpark = spark.read.csv(timesCsv, header=True)
-    csvRatingInfoRest = 'Restaurants/user_profiling_rest.csv'
+    csvRatingInfoRest = r'D:\GP\RecommendationModel\Restaurants\user_profiling_rest.csv'
     # when entering a new user we do have to retrain the entire model
     ratingsSparkRest, rest = initial_files_Rest(csvRestInfo, csvRatingInfoRest)
     calculateSparsityRest(ratingsSparkRest)
@@ -49,8 +49,8 @@ def changeTimeFormat(df):
 
 def formatRecommendations (city,id):
     restaurants_df = getRecommendationForPlanRest(id, city)
-    attractions_data = pd.read_csv('attractions_reccommendation/attractions.csv')
-    ratings_data = pd.read_csv('attractions_reccommendation/user_profiling3010.csv')
+    attractions_data = pd.read_csv(r'D:\GP\RecommendationModel\attractions_reccommendation\attractions.csv')
+    ratings_data = pd.read_csv(r'D:\GP\RecommendationModel\attractions_reccommendation\user_profiling3010.csv')
     attractions_df = rbm.rbm(attractions_data, ratings_data, str.lower(city), id)
     restaurants_df_pandas = restaurants_df.toPandas()
     changeTimeFormat(restaurants_df_pandas)
@@ -91,6 +91,8 @@ def formatRecommendations (city,id):
     return data
 
 d=formatRecommendations('Cairo', 1)
+
+###########JUST PRINTING THE DICTIONARY ##################
 print("Restaurants:")
 for restaurant in d['restaurants']:
     print("- Name: {}, Location: {}, Open Time: {}, Close Time: {}, City: {}".format(restaurant['name'], restaurant['location'], restaurant['open_time'], restaurant['close_time'], restaurant['city']))
@@ -98,4 +100,5 @@ for restaurant in d['restaurants']:
 # print the attractions
 print("\nAttractions:")
 for attraction in d['attractions']:
-    print("- Name: {}, Location: {}, Open Time: {}, Close Time: {}, City: {}".format(attraction['attraction_name'], attraction['location'], attraction['open_time'], attraction['close_time'], attraction['city']))
+    print("- Name: {}, Location: {}, Open Time: {}, Close Time: {}, City: {}".format(attraction['attraction_name'],
+                                                                                     attraction['location'], attraction['open_time'], attraction['close_time'], attraction['city']))
