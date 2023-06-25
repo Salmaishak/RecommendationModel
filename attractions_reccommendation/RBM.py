@@ -135,8 +135,8 @@ def rbm(attractions_data, ratings_data, city, userid):
                                               'List Index_x',
                                               'Recommendation Score', 'rating'])
 
-    print("------------------- first 20 attractions for user {} -------------------".format(userid))
-    print(attractions_15_df.loc[(merged_data_15['city'] == city) & (merged_data_15['rating'].isna())].sort_values(
+    # print("------------------- first 20 attractions for user {} -------------------".format(userid))
+    attractions_15_df = (attractions_15_df.loc[(merged_data_15['city'] == city) & (merged_data_15['rating'].isna())].sort_values(
         ["Recommendation Score"], ascending=False).head(20))
     return attractions_15_df
 
