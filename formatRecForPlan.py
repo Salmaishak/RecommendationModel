@@ -72,22 +72,30 @@ def formatRecommendations (city,id):
 
     timesAttract = pd.read_csv('attractions_reccommendation/Attractions open hours.csv')
 
-    select = timesAttract.loc[:, ['attraction_id', 'open_time', 'close_time']]
+    # select = timesAttract.loc[:, ['attraction_id', 'open_time', 'close_time']]
 
-    joinedTimes = timesAttract.join(attractions_df.add_suffix('_ratings'), on='attraction_id', how='inner')
-
+    joinedTimes = attractions_df.merge(timesAttract[['attraction_id', 'attraction_name','open_time', 'close_time', 'Latitude', 'Longitude', 'city']], on='attraction_id', how='inner')
+    print(joinedTimes.columns)
+    print(joinedTimes)
     changeTimeFormat(joinedTimes)
     # Extract information from attractions dataframe and add to dictionary
     for _, row in joinedTimes.iterrows():
         attraction = {
-            "attraction_name": row['attraction_name'],
-            "location": (row['Latitude'], row['Longitude']),
+            "attraction_name": row['attraction_name_x'],
+            "location": (row['Latitude_x'], row['Longitude_x']),
             "open_time": row['open_time'],
             "close_time": row['close_time'],
-            "city": row['city']
+            "city": row['city_x']
         }
         data['attractions'].append(attraction)
     return data
 
 d=formatRecommendations('Cairo', 1)
-print(d)
+print("Restaurants:")
+for restaurant in d['restaurants']:
+    print("- Name: {}, Location: {}, Open Time: {}, Close Time: {}, City: {}".format(restaurant['name'], restaurant['location'], restaurant['open_time'], restaurant['close_time'], restaurant['city']))
+
+# print the attractions
+print("\nAttractions:")
+for attraction in d['attractions']:
+    print("- Name: {}, Location: {}, Open Time: {}, Close Time: {}, City: {}".format(attraction['attraction_name'], attraction['location'], attraction['open_time'], attraction['close_time'], attraction['city']))
