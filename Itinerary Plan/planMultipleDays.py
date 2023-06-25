@@ -190,7 +190,7 @@ def plan(city, starting_point, days, start_time, end_time, visited_res, visited_
             if (breakfast_flag == False and is_open(breakfast_start,breakfast_end,current_time)):
                 closest_places = get_closest_place(restaurants, starting_point, current_time, visited_res)
                 for place in closest_places:
-                    if (is_open(place["opening_time"],place["closing_time"],current_time)and place not in visited_res):
+                    if (is_open(place["open_time"],place["close_time"],current_time)and place not in visited_res):
                         itinerary.append(place)
                         visited_res.append(place)
                         starting_point = place["location"]
@@ -203,7 +203,7 @@ def plan(city, starting_point, days, start_time, end_time, visited_res, visited_
 
                 closest_places = get_closest_place(restaurants, starting_point, current_time, visited_res)
                 for place in closest_places:
-                    if (is_open(place["opening_time"],place["closing_time"],current_time)and place not in visited_res):
+                    if (is_open(place["open_time"],place["close_time"],current_time)and place not in visited_res):
                         itinerary.append(place)
                         visited_res.append(place)
                         starting_point = place["location"]
@@ -215,7 +215,7 @@ def plan(city, starting_point, days, start_time, end_time, visited_res, visited_
             elif ( dinner_flag == False and is_open(dinner_start,dinner_end,current_time)):
                 closest_places = get_closest_place(restaurants, starting_point, current_time, visited_res)
                 for place in closest_places:
-                    if (is_open(place["opening_time"],place["closing_time"],current_time)and place not in visited_res):
+                    if (is_open(place["open_time"],place["close_time"],current_time)and place not in visited_res):
                         itinerary.append(place)
                         visited_res.append(place)
                         starting_point = place["location"]
@@ -226,7 +226,7 @@ def plan(city, starting_point, days, start_time, end_time, visited_res, visited_
                         break
             closest_places = get_closest_place(attractions, starting_point, current_time, visited__attr)
             for place in closest_places:
-                if (is_open(place["opening_time"], place["closing_time"], current_time)and place not in visited__attr):
+                if (is_open(place["open_time"], place["close_time"], current_time)and place not in visited__attr):
                     itinerary.append(place)
                     visited__attr.append(place)
                     starting_point = place["location"]
@@ -237,7 +237,7 @@ def plan(city, starting_point, days, start_time, end_time, visited_res, visited_
 
             closest_places = get_closest_place(attractions, starting_point, current_time, visited__attr)
             for place in closest_places:
-                if (is_open(place["opening_time"], place["closing_time"], current_time) and place not in visited__attr):
+                if (is_open(place["open_time"], place["close_time"], current_time) and place not in visited__attr):
                     itinerary.append(place)
                     visited__attr.append(place)
                     starting_point = place["location"]

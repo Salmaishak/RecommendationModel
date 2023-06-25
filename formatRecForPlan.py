@@ -70,7 +70,7 @@ def formatRecommendations (city,id):
         }
         data['restaurants'].append(restaurant)
 
-    timesAttract = pd.read_csv('attractions_reccommendation/Attractions open hours.csv')
+    timesAttract = pd.read_csv(r'D:\GP\RecommendationModel\attractions_reccommendation\Attractions open hours.csv')
 
     # select = timesAttract.loc[:, ['attraction_id', 'open_time', 'close_time']]
 
