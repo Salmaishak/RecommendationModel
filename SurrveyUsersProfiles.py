@@ -52,11 +52,56 @@ def get_user_amenities():
     return user_amenities
 
 
-user_amenities_dict = get_user_amenities()
+# user_amenities_dict = get_user_amenities()
+#
+#
+#
+# for key in user_amenities_dict:
+#         arr = user_amenities_dict[key]
+#         user_profile(arr, key)
+# print (user_amenities_dict)
+
+cuisine_types_dict = { 'Mediterranean':1,  'Egyptian':2, 'Italian':3, 'Seafood':4,'Middle Eastern':5,'European':6 ,
+                 'American':7,'Vegetarian Friendly':8, 'Lebanese':9, 'Barbecue':10, 'Japanese':11,'Healthy':12,'Steakhouse':13,
+                 'French':14,'International':15}
+
+def get_user_cuisine_Types():
+    # Load Excel sheet into a Pandas dataframe
+    df = pd.read_csv('Personalized Travel Recommender.csv')
+
+    # Create an empty dictionary to store the arrays of matching amenities for each user ID
+    user_cusinie_types = {}
+
+    # Loop through each row in the dataframe
+    for index, row in df.iterrows():
+        # Extract the user ID and amenities for the current row
+        user_id = row['userID']
+        cusinie_types = row['cuisine types']
+
+        # Split the amenities string into a list of individual amenities
+        cusinie_types_list = cusinie_types.split(';')
+        print (cusinie_types)
+
+        matching_keys = []
+
+        # Loop through the amenities in the list
+        for type in cusinie_types_list:
+            # Check if the amenity is in the dictionary
+            if type in cuisine_types_dict:
+                # If it is, add the corresponding value (amenity number) to the matching keys list
+                matching_keys.append(cuisine_types_dict[type])
+
+        # Add the list of matching keys to the user_amenities dictionary
+        user_cusinie_types[user_id] = matching_keys
+
+    # Return the dictionary of user amenities
+    return user_cusinie_types
+
+user_cusinie_types_dict = get_user_cuisine_Types()
 
 
 
-for key in user_amenities_dict:
-        arr = user_amenities_dict[key]
-        user_profile(arr, key)
-print (user_amenities_dict)
+for key in user_cusinie_types_dict:
+        arr = user_cusinie_types_dict[key]
+        user_profile_restaurant(arr, key)
+print (user_cusinie_types_dict)
