@@ -128,7 +128,7 @@ visited_res = []
 visited__attr = []
 
 
-def plan(city, starting_point, days, start_time, end_time, visited_res, visited__attr):
+def plan(city, starting_point, days, start_time, end_time):
     breakfast_flag = False
     lunch_flag = False
     dinner_flag = False
@@ -250,13 +250,14 @@ def plan(city, starting_point, days, start_time, end_time, visited_res, visited_
     return itinerary
 
 
-i = 0
-def planmultipledays(days,city,location,no,start_time,end_time,visited_res,visited__attr):
-    i = 0
-    while i < days:
-        itiner2 = plan(city,location,no, start_time,end_time,visited_res,visited__attr)
+# i = 0
+def planmultipledays(days,city,location,no,start_time,end_time):
+    # i = 0
+    for i in range(1,days+1):
+        itiner2 = plan(city,location,no, start_time,end_time)
         print(itiner2)
-        i= i +1
+        # i= i +1
+        print(i)
 
-planmultipledays(4,"cairo", (30.0444, 31.2357), 1, "8AM", "8PM", visited_res, visited__attr)
+planmultipledays(4,"cairo", (30.0444, 31.2357), 1, "8AM", "8PM")
 

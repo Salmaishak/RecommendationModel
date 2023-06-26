@@ -90,7 +90,7 @@ def recommendationsRest (model,userID,rest,city):
         .filter(col('userID') == userID).filter(col('city')==city).orderBy(col('ratings').desc()).show()
 
 def recommendationsRestPlan(model, userID, rest, city, times):
-    userRecs = model.recommendForAllUsers(20)
+    userRecs = model.recommendForAllUsers(500)
     nrecommendations = userRecs \
         .withColumn("rec_exp", explode('recommendations')) \
         .select('userID', col("rec_exp.restID"), col("rec_exp.rating"))
