@@ -1,5 +1,6 @@
 import pandas as pd
 from Restaurants.restaurants_user_profiling import *
+from Hotels.initial_user_profiling import *
 amenities_dict = {
     'Restaurant': 1,
     'Air conditioning': 2,
@@ -50,8 +51,12 @@ def get_user_amenities():
     # Return the dictionary of user amenities
     return user_amenities
 
+
 user_amenities_dict = get_user_amenities()
+
+
+
 for key in user_amenities_dict:
         arr = user_amenities_dict[key]
-        user_profile_restaurant(arr, key)
+        user_profile(arr, key)
 print (user_amenities_dict)

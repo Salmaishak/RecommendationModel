@@ -55,4 +55,4 @@ def user_profile_rest(userID):
 
 def intoCSV(user_rating_df):
     #print(pd.DataFrame(user_rating_df))
-    pd.DataFrame(user_rating_df).to_csv('user_profiling_rest.csv', index = False, mode='a', header=False)
+    pd.DataFrame(user_rating_df).to_csv('../Hotels/user_profile_Data/user_profiling_rest.csv', index = False, mode='a', header=False)
