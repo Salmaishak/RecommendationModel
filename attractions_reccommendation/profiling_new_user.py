@@ -9,7 +9,7 @@ def intersection(lst1, lst2):
 
 
 def profiling_new_user(user_id, preferences):
-    attractions = pd.read_csv('attractions.csv', encoding='latin-1')
+    attractions = pd.read_csv(r'D:\GP\RecommendationModel\attractions_reccommendation\attractions.csv', encoding='latin-1')
 
     attraction_types = {1: 'Museum', 2: 'Park', 3: 'Historical landmark', 4: 'Beach', 5: 'Garden', 6: 'Art Gallery',
                         7: 'Palace', 8: 'Mosque', 9: 'Church', 10: 'Shopping mall', 11: 'Temple', 12: 'Bazar',

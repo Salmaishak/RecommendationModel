@@ -1,6 +1,7 @@
 import pandas as pd
 from Restaurants.restaurants_user_profiling import *
 from Hotels.initial_user_profiling import *
+from attractions_reccommendation.profiling_new_user import *
 amenities_dict = {
     'Restaurant': 1,
     'Air conditioning': 2,
@@ -96,12 +97,56 @@ def get_user_cuisine_Types():
 
     # Return the dictionary of user amenities
     return user_cusinie_types
+#
+# user_cusinie_types_dict = get_user_cuisine_Types()
+#
+#
+#
+# for key in user_cusinie_types_dict:
+#         arr = user_cusinie_types_dict[key]
+#         user_profile_restaurant(arr, key)
+# print (user_cusinie_types_dict)
 
-user_cusinie_types_dict = get_user_cuisine_Types()
+attraction_types_dict = {'Museum': 1, 'Park': 2, 'Historical landmark': 3, 'Beach': 4, 'Garden': 5, 'Art Gallery': 6,
+                    'Palace': 7, 'Mosque': 8, 'Church': 9, 'Shopping mall': 10, 'Temple': 11, 'Bazar': 12,
+                    'island': 13, 'Zoo': 14, 'Library': 15}
+def get_user_attraction_types():
+    # Load Excel sheet into a Pandas dataframe
+    df = pd.read_csv('Personalized Travel Recommender.csv')
+
+    # Create an empty dictionary to store the arrays of matching amenities for each user ID
+    user_attraction_types = {}
+
+    # Loop through each row in the dataframe
+    for index, row in df.iterrows():
+        # Extract the user ID and amenities for the current row
+        user_id = row['userID']
+        attraction_types = row['attraction types']
+
+        # Split the amenities string into a list of individual amenities
+        attraction_types_list = attraction_types.split(';')
+        print (attraction_types)
+
+        matching_keys = []
+
+        # Loop through the amenities in the list
+        for type in attraction_types_list:
+            # Check if the amenity is in the dictionary
+            if type in attraction_types_dict:
+                # If it is, add the corresponding value (amenity number) to the matching keys list
+                matching_keys.append(attraction_types_dict[type])
+
+        # Add the list of matching keys to the user_amenities dictionary
+        user_attraction_types[user_id] = matching_keys
+
+    # Return the dictionary of user amenities
+    return user_attraction_types
+
+user_attraction_dict = get_user_attraction_types()
 
 
 
-for key in user_cusinie_types_dict:
-        arr = user_cusinie_types_dict[key]
-        user_profile_restaurant(arr, key)
-print (user_cusinie_types_dict)
+for key in user_attraction_dict:
+        arr = user_attraction_dict[key]
+        profiling_new_user (key, arr)
+print (user_attraction_dict)
