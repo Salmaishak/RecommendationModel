@@ -31,21 +31,21 @@ def profiling_new_user(user_id, preferences):
         # row_attractions = attraction_types.split(",")
         # print(row_attractions)
 
-        if intersection(attraction_types, preferred_types):
-            rating = 5
-        else:
-            rating = int(1)
-        if rating > 1:
-            user_rating_df.append(
-                {
-                    'user_id': user_id,
-                    'attraction_id': col[0],
-                    'rating': rating,
-                    'flag': 'F',
-                    'city': col[8]
+    if intersection(attraction_types, preferred_types):
+        rating = random.uniform(3.5, 5)
+    else:
+        rating = random.uniform(1, 3.4)
+    if rating > 3.4:
+        user_rating_df.append(
+            {
+                'user_id': user_id,
+                'attraction_id': col[0],
+                'rating': rating,
+                'flag': 'F',
+                'city': col[8]
 
-                }
-            )
+            }
+        )
 
     pd.DataFrame(user_rating_df).to_csv('user_profiling3010.csv', index=False, mode='a', header=False)
 
