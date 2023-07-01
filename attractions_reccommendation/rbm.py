@@ -11,9 +11,10 @@ def rbm(attractions_data, ratings_data, city, userid):
 
     # merging attraction_df with ratings_df by attraction_id
     merged_data = attractions_data.merge(ratings_data, on='attraction_id')
+    print(merged_data['ratings_x'])
     merged_data = merged_data.drop(
         ['attraction_name', 'no_of_ratings', 'attraction_type', 'description', 'Latitude', 'Longitude', 'keywords',
-         'Unnamed: 10', 'flag', 'city_x', 'city_y', 'ratings'], axis=1)
+         'Unnamed: 10', 'flag', 'city_x', 'city_y', 'ratings_x'], axis=1)
 
     # group by user_id
     user_group = merged_data.groupby('user_id')
@@ -29,7 +30,8 @@ def rbm(attractions_data, ratings_data, city, userid):
         # For each attraction in curUser's attraction list
         for num, attraction in curUser.iterrows():
             # Divide the rating by 5 and store it
-            temp[attraction['List Index']] = attraction['rating'] / 5.0
+            print(attraction)
+            temp[int(attraction['List Index'])] = attraction['ratings_y'] / 5.0
 
         train_X.append(temp)
 
@@ -136,7 +138,7 @@ def rbm(attractions_data, ratings_data, city, userid):
                                               'Recommendation Score', 'rating'])
 
     # print("------------------- first 20 attractions for user {} -------------------".format(userid))
-    attractions_15_df = (attractions_15_df.loc[(merged_data_15['city'] == city) & (merged_data_15['rating'].isna())].sort_values(
+    attractions_15_df = (attractions_15_df.loc[(merged_data_15['city'] == city) & (merged_data_15['ratings_y'].isna())].sort_values(
         ["Recommendation Score"], ascending=False).head(100))
     return attractions_15_df
 

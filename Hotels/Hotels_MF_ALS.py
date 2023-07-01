@@ -74,11 +74,6 @@ def MF_ALS (train,test):
             print('RMSE IN= {}'.format(min_error))
             print('\nThe best model has {} latent factors'.format(best_rank))
 
-    # plt.plot(ranksUsed, errors)
-    # plt.xlabel("Rank in Model MF ALS")
-    # plt.ylabel("RMSE Error")
-    # plt.title("Relationship Between Rank and RMSE Error")
-    # plt.show()
     return best_model
 
 

@@ -53,9 +53,9 @@ def get_user_amenities():
     return user_amenities
 
 
-# user_amenities_dict = get_user_amenities()
-#
-#
+user_amenities_dict = get_user_amenities()
+
+
 #
 # for key in user_amenities_dict:
 #         arr = user_amenities_dict[key]
@@ -97,15 +97,15 @@ def get_user_cuisine_Types():
 
     # Return the dictionary of user amenities
     return user_cusinie_types
-#
-# user_cusinie_types_dict = get_user_cuisine_Types()
-#
-#
-#
-# for key in user_cusinie_types_dict:
-#         arr = user_cusinie_types_dict[key]
-#         user_profile_restaurant(arr, key)
-# print (user_cusinie_types_dict)
+
+user_cusinie_types_dict = get_user_cuisine_Types()
+
+
+
+for key in user_cusinie_types_dict:
+        arr = user_cusinie_types_dict[key]
+        user_profile_restaurant(arr, key)
+print (user_cusinie_types_dict)
 
 attraction_types_dict = {'Museum': 1, 'Park': 2, 'Historical landmark': 3, 'Beach': 4, 'Garden': 5, 'Art Gallery': 6,
                     'Palace': 7, 'Mosque': 8, 'Church': 9, 'Shopping mall': 10, 'Temple': 11, 'Bazar': 12,
@@ -145,8 +145,8 @@ def get_user_attraction_types():
 user_attraction_dict = get_user_attraction_types()
 
 
-
-for key in user_attraction_dict:
-        arr = user_attraction_dict[key]
-        profiling_new_user (key, arr)
-print (user_attraction_dict)
+#
+# for key in user_attraction_dict:
+#         arr = user_attraction_dict[key]
+#         profiling_new_user (key, arr)
+# print (user_attraction_dict)

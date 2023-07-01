@@ -1,3 +1,4 @@
+import json
 import math
 import datetime
 
@@ -250,14 +251,17 @@ def plan(city, starting_point, days, start_time, end_time):
     return itinerary
 
 
-# i = 0
-def planmultipledays(days,city,location,no,start_time,end_time):
-    # i = 0
-    for i in range(1,days+1):
-        itiner2 = plan(city,location,no, start_time,end_time)
-        print(itiner2)
-        # i= i +1
-        print(i)
+def planmultipledays(days, city, location, no, start_time, end_time):
+    for i in range(1, days + 1):
+        itiner2 = plan(city, location, no, start_time, end_time)
+        print(f"Day {i}:")
+        for j, item in enumerate(itiner2):
+            if 'name' in item:
+                print(f"- {j+1}. Restaurant: {item['name']}")
+            elif 'attraction_name' in item:
+                attraction_name = item['attraction_name'].rstrip(': ')
+                print(f"- {j+1}. Attraction: {attraction_name}")
+        print()
 
-planmultipledays(4,"cairo", (30.0444, 31.2357), 1, "8AM", "8PM")
+planmultipledays(4,"giza", (30.0444, 31.2357), 1, "8AM", "8PM")
 

@@ -7,10 +7,10 @@ from datetime import datetime
 
 
 def getRecommendationForPlanRest(userID, City):
-    csvRestInfo = "Restaurants/Cairo_Final_Clean_Updated.csv"
-    timesCsv = "Restaurants/Allrestaurants3.csv"
+    csvRestInfo = "D:\GP\RecommendationModel\Restaurants\Allrestaurants2.csv"
+    timesCsv = "D:\GP\RecommendationModel\Restaurants\Allrestaurants3.csv"
     timesSpark = spark.read.csv(timesCsv, header=True)
-    csvRatingInfoRest = 'Restaurants/user_profiling_rest.csv'
+    csvRatingInfoRest = r'D:\GP\RecommendationModel\Restaurants\user_profiling_rest.csv'
     # when entering a new user we do have to retrain the entire model
     ratingsSparkRest, rest = initial_files_Rest(csvRestInfo, csvRatingInfoRest)
     calculateSparsityRest(ratingsSparkRest)
@@ -52,8 +52,8 @@ def changeTimeFormat(df):
 
 def formatRecommendations(city, id):
     restaurants_df = getRecommendationForPlanRest(id, city)
-    attractions_data = pd.read_csv('../attractions_reccommendation/attractions.csv')
-    ratings_data = pd.read_csv('../attractions_reccommendation/user_profiling3010.csv')
+    attractions_data = pd.read_csv(r'D:\GP\RecommendationModel\attractions_reccommendation\attractions.csv')
+    ratings_data = pd.read_csv(r'D:\GP\RecommendationModel\attractions_reccommendation\user_profiling3010.csv')
     attractions_df = rbm.rbm(attractions_data, ratings_data, str.lower(city), id)
     restaurants_df_pandas = restaurants_df.toPandas()
     changeTimeFormat(restaurants_df_pandas)

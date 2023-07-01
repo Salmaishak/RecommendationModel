@@ -8,7 +8,7 @@ def intersection(lst1, lst2):
 
 
 def user_profile(userID):
-    allhotels = pd.read_csv('../Allhotels.csv', encoding='latin-1')
+    allhotels = pd.read_csv('D:\GP\RecommendationModel\Hotels\Allhotels.csv', encoding='latin-1')
 
     amenities = {1: 'Restaurant', 2: 'Air conditioning', 3: 'Laundry service', 4:'Room service', 5:'Airport transportation',6:'Non-smoking rooms',
                  7:'24-hour front desk',8:'Bar / lounge', 9:'Family rooms', 10:'Safe', 11:'Wifi',12:'Pool',13:'Dry cleaning',
