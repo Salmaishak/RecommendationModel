@@ -55,4 +55,11 @@ def user_profile(userID):
 
 def intoCSV(user_rating_df):
     # print(pd.DataFrame(user_rating_df))
-    pd.DataFrame(user_rating_df).to_csv('user_profiling3011.csv', index=False, mode='a', header=False)
+    pd.DataFrame(user_rating_df).to_csv('user_profiling100.csv', index=False, mode='a', header=False)
+
+
+df = []
+for x in range(1, 101):
+    df = user_profile(x)
+    # print(x)
+    intoCSV(df)

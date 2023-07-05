@@ -2,12 +2,12 @@ import tensorflow as tf
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
-
-# %matplotlib inline
+import keras
 
 def rbm(attractions_data, ratings_data, city, userid):
     attractions_data['List Index'] = attractions_data.index
+    # print(attractions_data.columns)
+    # print(ratings_data.columns)
 
     # merging attraction_df with ratings_df by attraction_id
     merged_data = attractions_data.merge(ratings_data, on='attraction_id')
@@ -40,7 +40,7 @@ def rbm(attractions_data, ratings_data, city, userid):
     # -----------------  Model's Parameters  -----------------
     import tensorflow.compat.v1 as tf
 
-    hidden_units = 1  # can be set to any number
+    hidden_units = 10  # can be set to any number
     visible_units = len(attractions_data)
     tf.disable_v2_behavior()
     vb = tf.placeholder("float", [visible_units])  # no. of unique attractions
@@ -75,6 +75,9 @@ def rbm(attractions_data, ratings_data, city, userid):
     err = v0 - v1
     err_sum = tf.reduce_mean(err * err)
 
+    # RMSE
+    rmse = tf.sqrt(err_sum)
+
     # initialize variables with zeros
     # Current weight
     cur_w = np.zeros([visible_units, hidden_units], np.float32)
@@ -91,9 +94,23 @@ def rbm(attractions_data, ratings_data, city, userid):
     sess = tf.Session()
     sess.run(tf.global_variables_initializer())
 
-    epochs = 15
+    epochs = 500
     batchsize = 10
     errors = []
+    # mean absolute error------------------------------
+    # for i in range(epochs):
+    #     for start, end in zip(range(0, len(train_X), batchsize), range(batchsize, len(train_X), batchsize)):
+    #         batch = train_X[start:end]
+    #         cur_w = sess.run(update_w, feed_dict={v0: batch, W: prv_w, vb: prv_vb, hb: prv_hb})
+    #         cur_vb = sess.run(update_vb, feed_dict={v0: batch, W: prv_w, vb: prv_vb, hb: prv_hb})
+    #         cur_nb = sess.run(update_hb, feed_dict={v0: batch, W: prv_w, vb: prv_vb, hb: prv_hb})
+    #         prv_w = cur_w
+    #         prv_vb = cur_vb
+    #         prv_hb = cur_nb
+    #     errors.append(sess.run(err_sum, feed_dict={v0: train_X, W: cur_w, vb: cur_vb, hb: cur_nb}))
+    #     print("mae: ",errors[-1])
+
+    # root mean square error------------------------------
     for i in range(epochs):
         for start, end in zip(range(0, len(train_X), batchsize), range(batchsize, len(train_X), batchsize)):
             batch = train_X[start:end]
@@ -103,8 +120,8 @@ def rbm(attractions_data, ratings_data, city, userid):
             prv_w = cur_w
             prv_vb = cur_vb
             prv_hb = cur_nb
-        errors.append(sess.run(err_sum, feed_dict={v0: train_X, W: cur_w, vb: cur_vb, hb: cur_nb}))
-        print(errors[-1])
+        errors.append(sess.run(rmse, feed_dict={v0: train_X, W: cur_w, vb: cur_vb, hb: cur_nb}))
+        print("rmse: ",errors[-1])
 
     # -----------------  Recommendation  -----------------
     # Selecting the input user
@@ -136,8 +153,7 @@ def rbm(attractions_data, ratings_data, city, userid):
                                               'Recommendation Score', 'rating'])
 
     # print("------------------- first 20 attractions for user {} -------------------".format(userid))
-    attractions_15_df = (attractions_15_df.loc[(merged_data_15['city'] == city) & (merged_data_15['rating'].isna())].sort_values(
-        ["Recommendation Score"], ascending=False).head(20))
+    attractions_15_df = (
+        attractions_15_df.loc[(merged_data_15['city'] == city) & (merged_data_15['rating'].isna())].sort_values(
+            ["Recommendation Score"], ascending=False).head(20))
     return attractions_15_df
-
-
